@@ -1,577 +1,768 @@
 
 <!DOCTYPE html>
-<html lang="zh-CN" class="no-js">
+<html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width">
-	<link rel="profile" href="http://gmpg.org/xfn/11">
-	<link rel="pingback" href="https://www.johnzhang.xyz/xmlrpc.php">
-	<!--[if lt IE 9]>
-	<script src="https://www.johnzhang.xyz/wp-content/themes/twentyfifteen/js/html5.js"></script>
-	<![endif]-->
-	<script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>
-<title>张佑杰的个人博客 | John Zhang</title>
+    <meta charset="UTF-8">
+    <title>Home | NOJ</title>
+    <!-- Copyright Information -->
+    <meta name="author" content="">
+    <meta name="organization" content="">
+    <meta name="developer" content="">
+    <meta name="version" content="">
+    <meta name="subversion" content="">
+    <!-- SEO Information -->
+    <meta name="keywords" content="NOJ,NJUPT Online Judge,noip,noi,OJ,acm,icpc,onlineJudge,NUPT Online Judge" />
+    <meta name="description" content="NOJ is yet another Online Judge providing you functions like problem solving, discussing, solutions, groups, contests and ranking system." />
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="BRyFubDyLRehkHBlVR3jIpdwQqrGigtsvNKXsJzS">
+    <!-- Necessarily Declarations -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <link rel="alternate icon" type="image/png" href="/favicon.png">
+    <!-- OpenSearch -->
+    <link rel="search" type="application/opensearchdescription+xml" title="NOJ" href="/opensearch.xml">
+    <!-- Mobile Display Declarations -->
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="theme-color" content="#3E4551">
+    <!-- Desktop App Declarations -->
+    <meta name="msapplication-TileColor" content="#3E4551">
+    <!-- Third-Party Declarations -->
+    <meta name="google-site-verification" content="u46lDlbRfXrmpoVSn02THlqhRO8LvFbESK98U7JqxTg" />
+    <meta name="baidu-site-verification" content="8vtAmt2tnZ" />
+    <!-- Loading Style -->
+    <style>
+        loading>div {
+            text-align: center;
+        }
 
-<!-- All in One SEO Pack 2.10.1 by Michael Torbert of Semper Fi Web Designob_start_detected [-1,-1] -->
-<meta name="description"  content="NOJ 是一个开源的、基于 Laravel 构建的现代化 Online Judge，开源于 GitHub，详见ZsgsDeisng/NOJ。 最初设想中，我想把NOJ做成依结合Virtual Judge与Online" />
-<link rel='next' href='https://www.johnzhang.xyz/page/2' />
+        loading p {
+            font-weight: 300;
+        }
 
-<link rel="canonical" href="https://www.johnzhang.xyz/" />
-<!-- /all in one seo pack -->
-<link rel='dns-prefetch' href='//www.johnzhang.xyz' />
-<link rel='dns-prefetch' href='//s0.wp.com' />
-<link rel='dns-prefetch' href='//secure.gravatar.com' />
-<link rel='dns-prefetch' href='//netdna.bootstrapcdn.com' />
-<link rel='dns-prefetch' href='//fonts.googleapis.com' />
-<link rel='dns-prefetch' href='//s.w.org' />
-<link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
-<link rel="alternate" type="application/rss+xml" title="张佑杰的个人博客 &raquo; Feed" href="https://www.johnzhang.xyz/feed" />
-<link rel="alternate" type="application/rss+xml" title="张佑杰的个人博客 &raquo; 评论Feed" href="https://www.johnzhang.xyz/comments/feed" />
-		<script type="text/javascript">
-			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.johnzhang.xyz\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.0.8"}};
-			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
-		</script>
-		<style type="text/css">
-img.wp-smiley,
-img.emoji {
-	display: inline !important;
-	border: none !important;
-	box-shadow: none !important;
-	height: 1em !important;
-	width: 1em !important;
-	margin: 0 .07em !important;
-	vertical-align: -0.1em !important;
-	background: none !important;
-	padding: 0 !important;
-}
-</style>
-<link rel='stylesheet' id='twentyfifteen-jetpack-css'  href='https://www.johnzhang.xyz/wp-content/plugins/jetpack/modules/theme-tools/compat/twentyfifteen.css?ver=5.9.1' type='text/css' media='all' />
-<link rel='stylesheet' id='wp-block-library-css'  href='https://www.johnzhang.xyz/wp-includes/css/dist/block-library/style.min.css?ver=5.0.8' type='text/css' media='all' />
-<link rel='stylesheet' id='wp-block-library-theme-css'  href='https://www.johnzhang.xyz/wp-includes/css/dist/block-library/theme.min.css?ver=5.0.8' type='text/css' media='all' />
-<link rel='stylesheet' id='fvp-frontend-css'  href='https://www.johnzhang.xyz/wp-content/plugins/featured-video-plus/styles/frontend.css?ver=2.3.3' type='text/css' media='all' />
-<link rel='stylesheet' id='ipanorama_ipanorama-css'  href='https://www.johnzhang.xyz/wp-content/plugins/ipanorama-360-virtual-tour-builder-lite/lib/ipanorama.css?ver=1.3.8' type='text/css' media='all' />
-<link rel='stylesheet' id='ipanorama_ipanorama_wp-css'  href='https://www.johnzhang.xyz/wp-content/plugins/ipanorama-360-virtual-tour-builder-lite/lib/ipanorama.wp.css?ver=1.3.8' type='text/css' media='all' />
-<link rel='stylesheet' id='font-awesome-css'  href='//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css' type='text/css' media='screen' />
-<link rel='stylesheet' id='ushare-style-css'  href='https://www.johnzhang.xyz/wp-content/plugins/ushare/assets/css/ushare.css?ver=5.0.8' type='text/css' media='all' />
-<link rel='stylesheet' id='twentyfifteen-fonts-css'  href='https://fonts.geekzu.org/css?family=Noto+Sans%3A400italic%2C700italic%2C400%2C700%7CNoto+Serif%3A400italic%2C700italic%2C400%2C700%7CInconsolata%3A400%2C700&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
-<link rel='stylesheet' id='genericons-css'  href='https://www.johnzhang.xyz/wp-content/plugins/jetpack/_inc/genericons/genericons/genericons.css?ver=3.1' type='text/css' media='all' />
-<link rel='stylesheet' id='twentyfifteen-style-css'  href='https://www.johnzhang.xyz/wp-content/themes/twentyfifteen/style.css?ver=5.0.8' type='text/css' media='all' />
-<link rel='stylesheet' id='twentyfifteen-block-style-css'  href='https://www.johnzhang.xyz/wp-content/themes/twentyfifteen/css/blocks.css?ver=20181018' type='text/css' media='all' />
-<!--[if lt IE 9]>
-<link rel='stylesheet' id='twentyfifteen-ie-css'  href='https://www.johnzhang.xyz/wp-content/themes/twentyfifteen/css/ie.css?ver=20141010' type='text/css' media='all' />
-<![endif]-->
-<!--[if lt IE 8]>
-<link rel='stylesheet' id='twentyfifteen-ie7-css'  href='https://www.johnzhang.xyz/wp-content/themes/twentyfifteen/css/ie7.css?ver=20141010' type='text/css' media='all' />
-<![endif]-->
-<link rel='stylesheet' id='open-sans-css'  href='https://fonts.geekzu.org/css?family=Open+Sans%3A300italic%2C400italic%2C600italic%2C300%2C400%2C600&#038;subset=latin%2Clatin-ext&#038;ver=5.0.8' type='text/css' media='all' />
-<link rel='stylesheet' id='jetpack_css-css'  href='https://www.johnzhang.xyz/wp-content/plugins/jetpack/css/jetpack.css?ver=5.9.1' type='text/css' media='all' />
-<link rel='stylesheet' id='wpcountdown-css'  href='https://www.johnzhang.xyz/wp-content/plugins/wpcountdown/static/css/main.css?ver=1.2' type='text/css' media='all' />
-<script type='text/javascript' src='https://www.johnzhang.xyz/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
-<script type='text/javascript' src='https://www.johnzhang.xyz/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
-<script type='text/javascript' src='https://www.johnzhang.xyz/wp-content/plugins/featured-video-plus/js/jquery.fitvids.min.js?ver=master-2015-08'></script>
-<script type='text/javascript'>
-/* <![CDATA[ */
-var fvpdata = {"ajaxurl":"https:\/\/www.johnzhang.xyz\/wp-admin\/admin-ajax.php","nonce":"e9791a6713","fitvids":"1","dynamic":"","overlay":"","opacity":"0.75","color":"b","width":"640"};
-/* ]]> */
-</script>
-<script type='text/javascript' src='https://www.johnzhang.xyz/wp-content/plugins/featured-video-plus/js/frontend.min.js?ver=2.3.3'></script>
-<script type='text/javascript' src='https://www.johnzhang.xyz/wp-content/plugins/ushare/assets/js/jquery.qrcode.min.js'></script>
-<script type='text/javascript' src='https://www.johnzhang.xyz/wp-content/plugins/jetpack/_inc/build/postmessage.min.js?ver=5.9.1'></script>
-<script type='text/javascript' src='https://www.johnzhang.xyz/wp-content/plugins/jetpack/_inc/build/jquery.jetpack-resize.min.js?ver=5.9.1'></script>
-<script type='text/javascript' src='https://www.johnzhang.xyz/wp-content/plugins/wpcountdown/static/js/countdown.js?ver=1.2'></script>
-<link rel='https://api.w.org/' href='https://www.johnzhang.xyz/wp-json/' />
-<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.johnzhang.xyz/xmlrpc.php?rsd" />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.johnzhang.xyz/wp-includes/wlwmanifest.xml" /> 
-<meta name="generator" content="WordPress 5.0.8" />
-<link rel='shortlink' href='https://wp.me/9hJO6' />
+        loading {
+            display: flex;
+            z-index: 999;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            justify-content: center;
+            align-items: center;
+            background: #f5f5f5;
+            transition: .2s ease-out .0s;
+            opacity: 1;
+        }
 
+        .lds-ellipsis {
+            display: inline-block;
+            position: relative;
+            width: 64px;
+            height: 64px;
+        }
+
+        .lds-ellipsis div {
+            position: absolute;
+            top: 27px;
+            width: 11px;
+            height: 11px;
+            border-radius: 50%;
+            background: rgba(0, 0, 0, .54);
+            animation-timing-function: cubic-bezier(0, 1, 1, 0);
+        }
+
+        .lds-ellipsis div:nth-child(1) {
+            left: 6px;
+            animation: lds-ellipsis1 0.6s infinite;
+        }
+
+        .lds-ellipsis div:nth-child(2) {
+            left: 6px;
+            animation: lds-ellipsis2 0.6s infinite;
+        }
+
+        .lds-ellipsis div:nth-child(3) {
+            left: 26px;
+            animation: lds-ellipsis2 0.6s infinite;
+        }
+
+        .lds-ellipsis div:nth-child(4) {
+            left: 45px;
+            animation: lds-ellipsis3 0.6s infinite;
+        }
+
+        @keyframes  lds-ellipsis1 {
+            0% {
+                transform: scale(0);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes  lds-ellipsis3 {
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(0);
+            }
+        }
+
+        @keyframes  lds-ellipsis2 {
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(19px, 0);
+            }
+        }
+    </style>
+</head>
+
+<body style="display: flex;flex-direction: column;min-height: 100vh;">
+    <!-- Loading -->
+    <loading>
+        <div>
+            <div class="lds-ellipsis">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <p>Preparing NOJ</p>
+        </div>
+    </loading>
+    <!-- Style -->
+    <link rel="stylesheet" href="/static/fonts/Roboto/roboto.css">
+    <link rel="stylesheet" href="/static/fonts/Montserrat/montserrat.css">
+    <link rel="stylesheet" href="/static/fonts/Roboto-Slab/roboto-slab.css">
+    <link rel="stylesheet" href="/static/library/bootstrap-material-design/dist/css/bootstrap-material-design.min.css">
+    <link rel="stylesheet" href="/static/css/wemd-color-scheme.css">
+    <link rel="stylesheet" href="/static/css/main.css?version=0.3.2-48-gc106d2c">
+    <link rel="stylesheet" href="/static/library/animate.css/animate.min.css">
+    <link rel="stylesheet" href="/static/fonts/MDI-WXSS/MDI.css">
+    <link rel="stylesheet" href="/static/fonts/Devicon/devicon.css">
+    <!-- Background -->
+    <div class="mundb-background-container">
+        <img src="">
+    </div>
+    <div id="nav-container" style="margin-bottom:30px;position:sticky;top:0;z-index:899;flex-shrink: 0;flex-grow: 0;">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+            
+                <a class="navbar-brand" href="/">
+                    <img src="/static/img/njupt.png" height="30"> NJUPT Online Judge
+                </a>
+
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                                        <li class="nav-item">
+                        <a class="nav-link  active " href="/">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                                                                <li class="nav-item">
+                            <a class="nav-link " href="/problem">Problem</a>
+                        </li>
+                                                                <li class="nav-item">
+                            <a class="nav-link " href="/status">Status</a>
+                        </li>
+                                                                <li class="nav-item">
+                            <a class="nav-link " href="/rank">Rank</a>
+                        </li>
+                                        <li class="nav-item">
+                        <a class="nav-link " href="/contest">Contest</a>
+                    </li>
+                                        <li class="nav-item">
+                        <a class="nav-link " href="/group">Group</a>
+                    </li>
+                                                                                            <li class="nav-item">
+                                <a class="nav-link" href="/jscpc" target="">JSCPC</a>
+                            </li>
+                                                    <li class="nav-item">
+                                <a class="nav-link" href="/babel" target="_blank">BABEL</a>
+                            </li>
+                                                            </ul>
+
+                <ul class="navbar-nav mundb-nav-right">
+                                        <form id="search-box" action="/search" method="get" class="form-inline my-2 my-lg-0 mundb-inline">
+                        <span class="bmd-form-group"><input id="search-key" class="form-control mr-sm-2 atsast-searchBox" name="q" type="search" value="" placeholder="Onmi Search" autocomplete="off" aria-label="search"></span>
+                        <input type="hidden" name="tab" value="problems">
+                    </form>
+                                                            <li class="nav-item mundb-no-shrink />">
+                                                    <a class="nav-link " href="/account">Account</a>
+                                            </li>
+                </ul>
+            </div>
+        </nav>
+            </div>
+
+    
+<link rel="stylesheet" href="/static/fonts/Raleway/raleway.css">
 <style>
-.scroll-back-to-top-wrapper {
-    position: fixed;
-	opacity: 0;
-	visibility: hidden;
-	overflow: hidden;
-	text-align: center;
-	z-index: 99999999;
-    background-color: #777777;
-	color: #eeeeee;
-	width: 50px;
-	height: 48px;
-	line-height: 48px;
-	right: 30px;
-	bottom: 30px;
-	padding-top: 2px;
-	border-top-left-radius: 10px;
-	border-top-right-radius: 10px;
-	border-bottom-right-radius: 10px;
-	border-bottom-left-radius: 10px;
-	-webkit-transition: all 0.5s ease-in-out;
-	-moz-transition: all 0.5s ease-in-out;
-	-ms-transition: all 0.5s ease-in-out;
-	-o-transition: all 0.5s ease-in-out;
-	transition: all 0.5s ease-in-out;
-}
-.scroll-back-to-top-wrapper:hover {
-	background-color: #888888;
-  color: #eeeeee;
-}
-.scroll-back-to-top-wrapper.show {
-    visibility:visible;
-    cursor:pointer;
-	opacity: 0.5;
-}
-.scroll-back-to-top-wrapper i.fa {
-	line-height: inherit;
-}
-.scroll-back-to-top-wrapper .fa-lg {
-	vertical-align: 0;
-}
-.scroll-back-to-top-wrapper{box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 30px!important;}</style>
-<link rel='dns-prefetch' href='//v0.wordpress.com'/>
-<link rel='dns-prefetch' href='//widgets.wp.com'/>
-<link rel='dns-prefetch' href='//s0.wp.com'/>
-<link rel='dns-prefetch' href='//s1.wp.com'/>
-<link rel='dns-prefetch' href='//s2.wp.com'/>
-<link rel='dns-prefetch' href='//0.gravatar.com'/>
-<link rel='dns-prefetch' href='//1.gravatar.com'/>
-<link rel='dns-prefetch' href='//2.gravatar.com'/>
-<style type='text/css'>img#wpstats{display:none}</style><style type="text/css" id="syntaxhighlighteranchor"></style>
-<link rel="icon" href="https://www.johnzhang.xyz/wp-content/uploads/2016/12/cropped-avatar-32x32.png" sizes="32x32" />
-<link rel="icon" href="https://www.johnzhang.xyz/wp-content/uploads/2016/12/cropped-avatar-192x192.png" sizes="192x192" />
-<link rel="apple-touch-icon-precomposed" href="https://www.johnzhang.xyz/wp-content/uploads/2016/12/cropped-avatar-180x180.png" />
-<meta name="msapplication-TileImage" content="https://www.johnzhang.xyz/wp-content/uploads/2016/12/cropped-avatar-270x270.png" />
-			<link rel="stylesheet" type="text/css" id="wp-custom-css" href="https://www.johnzhang.xyz/?custom-css=91d627523e" />
-		</head>
+    paper-card {
+        display: block;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 30px;
+        border-radius: 4px;
+        transition: .2s ease-out .0s;
+        color: #7a8e97;
+        background: #fff;
+        padding: 1rem;
+        position: relative;
+        border: 1px solid rgba(0, 0, 0, 0.15);
+        margin-bottom: 2rem;
+    }
 
-<body class="home blog wp-custom-logo wp-embed-responsive">
-<div id="page" class="hfeed site">
-	<a class="skip-link screen-reader-text" href="#content">跳至内容</a>
+    paper-card:hover {
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 40px;
+    }
 
-	<div id="sidebar" class="sidebar">
-		<header id="masthead" class="site-header" role="banner">
-			<div class="site-branding">
-				<a href="https://www.johnzhang.xyz/" class="custom-logo-link" rel="home" itemprop="url"><img width="248" height="248" src="https://www.johnzhang.xyz/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif" class="custom-logo" alt="张佑杰的个人博客" itemprop="logo" data-lazy-src="https://www.johnzhang.xyz/wp-content/uploads/2016/12/cropped-avatar-1.png" data-lazy-srcset="https://www.johnzhang.xyz/wp-content/uploads/2016/12/cropped-avatar-1.png 248w, https://www.johnzhang.xyz/wp-content/uploads/2016/12/cropped-avatar-1-150x150.png 150w" data-lazy-sizes="(max-width: 248px) 100vw, 248px" /></a>						<h1 class="site-title"><a href="https://www.johnzhang.xyz/" rel="home">张佑杰的个人博客</a></h1>
-											<p class="site-description">John Zhang</p>
-									<button class="secondary-toggle">菜单和挂件</button>
-			</div><!-- .site-branding -->
-		</header><!-- .site-header -->
+    .cm-title-section{
+        font-family: 'Raleway';
+    }
 
-			<div id="secondary" class="secondary">
+    .cm-oj{
+        border: 1px solid rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        margin-bottom: 2rem;
+        padding: 0.5rem 1rem;
+        background: rgb(255, 255, 255);
+    }
 
-					<nav id="site-navigation" class="main-navigation" role="navigation">
-				<div class="menu-menu-1-container"><ul id="menu-menu-1" class="nav-menu"><li id="menu-item-9" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-9"><a href="https://www.johnzhang.xyz">首页</a></li>
-<li id="menu-item-13" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-13"><a href="#">分类</a>
-<ul class="sub-menu">
-	<li id="menu-item-17" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-17"><a href="https://www.johnzhang.xyz/archives/category/programming">编程</a></li>
-	<li id="menu-item-16" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16"><a href="https://www.johnzhang.xyz/archives/category/learning">学习</a></li>
-	<li id="menu-item-18" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-18"><a href="https://www.johnzhang.xyz/archives/category/essay">随笔</a></li>
-	<li id="menu-item-15" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-15"><a href="https://www.johnzhang.xyz/archives/category/tucao">吐槽</a></li>
-	<li id="menu-item-14" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-14"><a href="https://www.johnzhang.xyz/archives/category/share">分享</a></li>
-</ul>
-</li>
-<li id="menu-item-462" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-462"><a href="#">一些微小的贡献</a>
-<ul class="sub-menu">
-	<li id="menu-item-463" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-463"><a href="https://www.johnzhang.xyz/worldwar">征服世界之旅</a></li>
-	<li id="menu-item-580" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-580"><a href="https://www.johnzhang.xyz/archives/tag/acm">ACM题解</a></li>
-	<li id="menu-item-690" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-690"><a href="https://www.johnzhang.xyz/vjbeautify">VJudge Beautify</a></li>
-</ul>
-</li>
-<li id="menu-item-293" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-293"><a href="#">关于我</a>
-<ul class="sub-menu">
-	<li id="menu-item-90" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-90"><a href="https://www.johnzhang.xyz/about">关于我</a></li>
-	<li id="menu-item-294" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-294"><a href="https://www.johnzhang.xyz/resume">我的简历</a></li>
-</ul>
-</li>
-</ul></div>			</nav><!-- .main-navigation -->
-		
-		
-					<div id="widget-area" class="widget-area" role="complementary">
-				<aside id="wpcom_social_media_icons_widget-3" class="widget widget_wpcom_social_media_icons_widget"><h2 class="widget-title">社交</h2><ul><li><a href="https://www.facebook.com/ZsgsDesign/" class="genericon genericon-facebook" target="_blank"><span class="screen-reader-text">在 Facebook 上查看的ZsgsDesign的个人资料</span></a></li><li><a href="https://twitter.com/ZsgsDesign/" class="genericon genericon-twitter" target="_blank"><span class="screen-reader-text">在 Twitter 上查看的ZsgsDesign的个人资料</span></a></li><li><a href="https://www.linkedin.com/in/johnzhang4/" class="genericon genericon-linkedin" target="_blank"><span class="screen-reader-text">在 LinkedIn 上查看的johnzhang4的个人资料</span></a></li><li><a href="https://github.com/ZsgsDesign/" class="genericon genericon-github" target="_blank"><span class="screen-reader-text">在 GitHub 上查看的ZsgsDesign的个人资料</span></a></li></ul></aside><aside id="search-2" class="widget widget_search"><form role="search" method="get" class="search-form" action="https://www.johnzhang.xyz/">
-				<label>
-					<span class="screen-reader-text">搜索：</span>
-					<input type="search" class="search-field" placeholder="搜索&hellip;" value="" name="s" />
-				</label>
-				<input type="submit" class="search-submit screen-reader-text" value="搜索" />
-			</form></aside><aside id="internet_defense_league_widget-2" class="widget widget_internet_defense_league_widget"><p><a href="https://internetdefenseleague.org/"><img src="https://i1.wp.com/internetdefenseleague.org/images/badges/final/shield_badge.png?ssl=1" alt="互联网防御联盟的成员" style="max-width: 100%; height: auto;" /></a></p></aside>		<aside id="recent-posts-2" class="widget widget_recent_entries">		<h2 class="widget-title">近期文章</h2>		<ul>
-											<li>
-					<a href="https://www.johnzhang.xyz/archives/942">NOJ——我是如何从零开始创造OJ的（一）</a>
-									</li>
-											<li>
-					<a href="https://www.johnzhang.xyz/archives/938">NOJ——我是如何从零开始创造OJ的（序）</a>
-									</li>
-											<li>
-					<a href="https://www.johnzhang.xyz/archives/929">NOJ Rating System</a>
-									</li>
-											<li>
-					<a href="https://www.johnzhang.xyz/archives/913">战狼源代码赏析</a>
-									</li>
-											<li>
-					<a href="https://www.johnzhang.xyz/archives/906">适用于Electron的gitignore</a>
-									</li>
-					</ul>
-		</aside><aside id="archives-2" class="widget widget_archive"><h2 class="widget-title">文章归档</h2>		<label class="screen-reader-text" for="archives-dropdown-2">文章归档</label>
-		<select id="archives-dropdown-2" name="archive-dropdown" onchange='document.location.href=this.options[this.selectedIndex].value;'>
-			
-			<option value="">选择月份</option>
-				<option value='https://www.johnzhang.xyz/archives/date/2019/05'> 2019年五月 &nbsp;(3)</option>
-	<option value='https://www.johnzhang.xyz/archives/date/2019/01'> 2019年一月 &nbsp;(5)</option>
-	<option value='https://www.johnzhang.xyz/archives/date/2018/12'> 2018年十二月 &nbsp;(8)</option>
-	<option value='https://www.johnzhang.xyz/archives/date/2018/10'> 2018年十月 &nbsp;(1)</option>
-	<option value='https://www.johnzhang.xyz/archives/date/2018/09'> 2018年九月 &nbsp;(8)</option>
-	<option value='https://www.johnzhang.xyz/archives/date/2018/08'> 2018年八月 &nbsp;(2)</option>
-	<option value='https://www.johnzhang.xyz/archives/date/2018/07'> 2018年七月 &nbsp;(2)</option>
-	<option value='https://www.johnzhang.xyz/archives/date/2018/03'> 2018年三月 &nbsp;(2)</option>
-	<option value='https://www.johnzhang.xyz/archives/date/2018/01'> 2018年一月 &nbsp;(1)</option>
-	<option value='https://www.johnzhang.xyz/archives/date/2017/12'> 2017年十二月 &nbsp;(1)</option>
-	<option value='https://www.johnzhang.xyz/archives/date/2017/11'> 2017年十一月 &nbsp;(4)</option>
-	<option value='https://www.johnzhang.xyz/archives/date/2017/10'> 2017年十月 &nbsp;(10)</option>
-	<option value='https://www.johnzhang.xyz/archives/date/2017/09'> 2017年九月 &nbsp;(2)</option>
-	<option value='https://www.johnzhang.xyz/archives/date/2017/08'> 2017年八月 &nbsp;(4)</option>
-	<option value='https://www.johnzhang.xyz/archives/date/2017/07'> 2017年七月 &nbsp;(2)</option>
-	<option value='https://www.johnzhang.xyz/archives/date/2017/06'> 2017年六月 &nbsp;(2)</option>
-	<option value='https://www.johnzhang.xyz/archives/date/2017/04'> 2017年四月 &nbsp;(3)</option>
-	<option value='https://www.johnzhang.xyz/archives/date/2017/03'> 2017年三月 &nbsp;(6)</option>
-	<option value='https://www.johnzhang.xyz/archives/date/2017/01'> 2017年一月 &nbsp;(4)</option>
-	<option value='https://www.johnzhang.xyz/archives/date/2016/12'> 2016年十二月 &nbsp;(3)</option>
-	<option value='https://www.johnzhang.xyz/archives/date/2016/11'> 2016年十一月 &nbsp;(1)</option>
-	<option value='https://www.johnzhang.xyz/archives/date/2016/09'> 2016年九月 &nbsp;(1)</option>
-	<option value='https://www.johnzhang.xyz/archives/date/2016/08'> 2016年八月 &nbsp;(2)</option>
-	<option value='https://www.johnzhang.xyz/archives/date/2016/07'> 2016年七月 &nbsp;(4)</option>
-	<option value='https://www.johnzhang.xyz/archives/date/2016/06'> 2016年六月 &nbsp;(3)</option>
-	<option value='https://www.johnzhang.xyz/archives/date/2016/05'> 2016年五月 &nbsp;(18)</option>
+    timeline-container{
+        display:block;
+    }
 
-		</select>
-		</aside><aside id="tag_cloud-2" class="widget widget_tag_cloud"><h2 class="widget-title">标签</h2><div class="tagcloud"><ul class='wp-tag-cloud' role='list'>
-	<li><a href="https://www.johnzhang.xyz/archives/tag/acm" class="tag-cloud-link tag-link-57 tag-link-position-1" style="font-size: 18.888888888889pt;" aria-label="ACM (18个项目)">ACM</a></li>
-	<li><a href="https://www.johnzhang.xyz/archives/tag/atsast" class="tag-cloud-link tag-link-73 tag-link-position-2" style="font-size: 12.444444444444pt;" aria-label="ATSAST (4个项目)">ATSAST</a></li>
-	<li><a href="https://www.johnzhang.xyz/archives/tag/c" class="tag-cloud-link tag-link-34 tag-link-position-3" style="font-size: 19.777777777778pt;" aria-label="C++ (22个项目)">C++</a></li>
-	<li><a href="https://www.johnzhang.xyz/archives/tag/codeforces" class="tag-cloud-link tag-link-58 tag-link-position-4" style="font-size: 16.666666666667pt;" aria-label="CodeForces (11个项目)">CodeForces</a></li>
-	<li><a href="https://www.johnzhang.xyz/archives/tag/css" class="tag-cloud-link tag-link-59 tag-link-position-5" style="font-size: 14.666666666667pt;" aria-label="CSS (7个项目)">CSS</a></li>
-	<li><a href="https://www.johnzhang.xyz/archives/tag/html" class="tag-cloud-link tag-link-64 tag-link-position-6" style="font-size: 14.666666666667pt;" aria-label="HTML (7个项目)">HTML</a></li>
-	<li><a href="https://www.johnzhang.xyz/archives/tag/ibm" class="tag-cloud-link tag-link-17 tag-link-position-7" style="font-size: 8pt;" aria-label="IBM (1个项目)">IBM</a></li>
-	<li><a href="https://www.johnzhang.xyz/archives/tag/javascript" class="tag-cloud-link tag-link-22 tag-link-position-8" style="font-size: 18pt;" aria-label="javascript (15个项目)">javascript</a></li>
-	<li><a href="https://www.johnzhang.xyz/archives/tag/laravel" class="tag-cloud-link tag-link-83 tag-link-position-9" style="font-size: 10pt;" aria-label="Laravel (2个项目)">Laravel</a></li>
-	<li><a href="https://www.johnzhang.xyz/archives/tag/markdown" class="tag-cloud-link tag-link-72 tag-link-position-10" style="font-size: 10pt;" aria-label="markdown (2个项目)">markdown</a></li>
-	<li><a href="https://www.johnzhang.xyz/archives/tag/noj" class="tag-cloud-link tag-link-82 tag-link-position-11" style="font-size: 11.333333333333pt;" aria-label="NOJ (3个项目)">NOJ</a></li>
-	<li><a href="https://www.johnzhang.xyz/archives/tag/php" class="tag-cloud-link tag-link-25 tag-link-position-12" style="font-size: 19.111111111111pt;" aria-label="php (19个项目)">php</a></li>
-	<li><a href="https://www.johnzhang.xyz/archives/tag/ssl" class="tag-cloud-link tag-link-46 tag-link-position-13" style="font-size: 11.333333333333pt;" aria-label="SSL (3个项目)">SSL</a></li>
-	<li><a href="https://www.johnzhang.xyz/archives/tag/visual-basic" class="tag-cloud-link tag-link-8 tag-link-position-14" style="font-size: 12.444444444444pt;" aria-label="Visual Basic (4个项目)">Visual Basic</a></li>
-	<li><a href="https://www.johnzhang.xyz/archives/tag/vr" class="tag-cloud-link tag-link-49 tag-link-position-15" style="font-size: 11.333333333333pt;" aria-label="VR (3个项目)">VR</a></li>
-	<li><a href="https://www.johnzhang.xyz/archives/tag/wordpress" class="tag-cloud-link tag-link-74 tag-link-position-16" style="font-size: 10pt;" aria-label="wordpress (2个项目)">wordpress</a></li>
-	<li><a href="https://www.johnzhang.xyz/archives/tag/%e4%b8%80%e5%88%86%e9%92%b1%e5%8a%a9%e5%ad%a6" class="tag-cloud-link tag-link-32 tag-link-position-17" style="font-size: 12.444444444444pt;" aria-label="一分钱助学 (4个项目)">一分钱助学</a></li>
-	<li><a href="https://www.johnzhang.xyz/archives/tag/%e4%ba%92%e8%81%94%e7%bd%91" class="tag-cloud-link tag-link-20 tag-link-position-18" style="font-size: 17pt;" aria-label="互联网 (12个项目)">互联网</a></li>
-	<li><a href="https://www.johnzhang.xyz/archives/tag/%e4%bd%9c%e6%96%87" class="tag-cloud-link tag-link-27 tag-link-position-19" style="font-size: 8pt;" aria-label="作文 (1个项目)">作文</a></li>
-	<li><a href="https://www.johnzhang.xyz/archives/tag/%e5%81%87%e6%96%b0%e9%97%bb" class="tag-cloud-link tag-link-47 tag-link-position-20" style="font-size: 10pt;" aria-label="假新闻 (2个项目)">假新闻</a></li>
-	<li><a href="https://www.johnzhang.xyz/archives/tag/%e5%85%ac%e5%b9%b3" class="tag-cloud-link tag-link-11 tag-link-position-21" style="font-size: 12.444444444444pt;" aria-label="公平 (4个项目)">公平</a></li>
-	<li><a href="https://www.johnzhang.xyz/archives/tag/%e5%85%ac%e7%9b%8a" class="tag-cloud-link tag-link-33 tag-link-position-22" style="font-size: 12.444444444444pt;" aria-label="公益 (4个项目)">公益</a></li>
-	<li><a href="https://www.johnzhang.xyz/archives/tag/%e5%9c%b0%e5%9b%be" class="tag-cloud-link tag-link-38 tag-link-position-23" style="font-size: 11.333333333333pt;" aria-label="地图 (3个项目)">地图</a></li>
-	<li><a href="https://www.johnzhang.xyz/archives/tag/%e5%a4%9a%e5%85%ac%e7%9b%8a" class="tag-cloud-link tag-link-26 tag-link-position-24" style="font-size: 12.444444444444pt;" aria-label="多公益 (4个项目)">多公益</a></li>
-	<li><a href="https://www.johnzhang.xyz/archives/tag/%e5%ae%89%e5%85%a8" class="tag-cloud-link tag-link-45 tag-link-position-25" style="font-size: 10pt;" aria-label="安全 (2个项目)">安全</a></li>
-	<li><a href="https://www.johnzhang.xyz/archives/tag/%e5%ae%89%e5%8d%93" class="tag-cloud-link tag-link-24 tag-link-position-26" style="font-size: 10pt;" aria-label="安卓 (2个项目)">安卓</a></li>
-	<li><a href="https://www.johnzhang.xyz/archives/tag/%e5%b8%82%e5%9c%ba" class="tag-cloud-link tag-link-13 tag-link-position-27" style="font-size: 11.333333333333pt;" aria-label="市场 (3个项目)">市场</a></li>
-	<li><a href="https://www.johnzhang.xyz/archives/tag/%e5%be%b7%e5%9b%bd%e7%94%b5%e5%bd%b1" class="tag-cloud-link tag-link-35 tag-link-position-28" style="font-size: 10pt;" aria-label="德国电影 (2个项目)">德国电影</a></li>
-	<li><a href="https://www.johnzhang.xyz/archives/tag/%e6%89%ac%e5%b7%9e%e4%b8%ad%e5%ad%a6" class="tag-cloud-link tag-link-50 tag-link-position-29" style="font-size: 11.333333333333pt;" aria-label="扬州中学 (3个项目)">扬州中学</a></li>
-	<li><a href="https://www.johnzhang.xyz/archives/tag/%e6%95%99%e8%82%b2" class="tag-cloud-link tag-link-10 tag-link-position-30" style="font-size: 14.111111111111pt;" aria-label="教育 (6个项目)">教育</a></li>
-	<li><a href="https://www.johnzhang.xyz/archives/tag/%e6%98%9f%e9%99%85%e8%bf%b7%e8%88%aa" class="tag-cloud-link tag-link-40 tag-link-position-31" style="font-size: 10pt;" aria-label="星际迷航 (2个项目)">星际迷航</a></li>
-	<li><a href="https://www.johnzhang.xyz/archives/tag/%e6%b1%9f%e8%8b%8f%e5%87%8f%e6%8b%9b" class="tag-cloud-link tag-link-14 tag-link-position-32" style="font-size: 10pt;" aria-label="江苏减招 (2个项目)">江苏减招</a></li>
-	<li><a href="https://www.johnzhang.xyz/archives/tag/%e6%b8%b8%e6%88%8f" class="tag-cloud-link tag-link-39 tag-link-position-33" style="font-size: 14.111111111111pt;" aria-label="游戏 (6个项目)">游戏</a></li>
-	<li><a href="https://www.johnzhang.xyz/archives/tag/%e7%94%b5%e5%bd%b1" class="tag-cloud-link tag-link-19 tag-link-position-34" style="font-size: 14.111111111111pt;" aria-label="电影 (6个项目)">电影</a></li>
-	<li><a href="https://www.johnzhang.xyz/archives/tag/%e7%a7%91%e5%8d%8f" class="tag-cloud-link tag-link-67 tag-link-position-35" style="font-size: 15.777777777778pt;" aria-label="科协 (9个项目)">科协</a></li>
-	<li><a href="https://www.johnzhang.xyz/archives/tag/%e7%ae%97%e6%b3%95" class="tag-cloud-link tag-link-23 tag-link-position-36" style="font-size: 22pt;" aria-label="算法 (35个项目)">算法</a></li>
-	<li><a href="https://www.johnzhang.xyz/archives/tag/%e7%ba%a2%e5%8c%85" class="tag-cloud-link tag-link-31 tag-link-position-37" style="font-size: 14.111111111111pt;" aria-label="红包 (6个项目)">红包</a></li>
-	<li><a href="https://www.johnzhang.xyz/archives/tag/%e7%ba%a2%e8%89%b2%e8%ad%a6%e6%88%92" class="tag-cloud-link tag-link-37 tag-link-position-38" style="font-size: 11.333333333333pt;" aria-label="红色警戒 (3个项目)">红色警戒</a></li>
-	<li><a href="https://www.johnzhang.xyz/archives/tag/%e7%bd%91%e7%bb%9c" class="tag-cloud-link tag-link-28 tag-link-position-39" style="font-size: 17.444444444444pt;" aria-label="网络 (13个项目)">网络</a></li>
-	<li><a href="https://www.johnzhang.xyz/archives/tag/%e7%bf%bb%e8%af%91" class="tag-cloud-link tag-link-41 tag-link-position-40" style="font-size: 10pt;" aria-label="翻译 (2个项目)">翻译</a></li>
-	<li><a href="https://www.johnzhang.xyz/archives/tag/%e8%87%aa%e7%94%b1" class="tag-cloud-link tag-link-21 tag-link-position-41" style="font-size: 10pt;" aria-label="自由 (2个项目)">自由</a></li>
-	<li><a href="https://www.johnzhang.xyz/archives/tag/%e8%8e%b7%e5%a5%96" class="tag-cloud-link tag-link-29 tag-link-position-42" style="font-size: 10pt;" aria-label="获奖 (2个项目)">获奖</a></li>
-	<li><a href="https://www.johnzhang.xyz/archives/tag/%e8%93%9d%e7%89%99" class="tag-cloud-link tag-link-9 tag-link-position-43" style="font-size: 8pt;" aria-label="蓝牙 (1个项目)">蓝牙</a></li>
-	<li><a href="https://www.johnzhang.xyz/archives/tag/%e9%87%8f%e5%ad%90%e8%ae%a1%e7%ae%97" class="tag-cloud-link tag-link-16 tag-link-position-44" style="font-size: 8pt;" aria-label="量子计算 (1个项目)">量子计算</a></li>
-	<li><a href="https://www.johnzhang.xyz/archives/tag/%e9%97%b2%e4%bd%9c%e8%8d%89" class="tag-cloud-link tag-link-18 tag-link-position-45" style="font-size: 11.333333333333pt;" aria-label="闲作草 (3个项目)">闲作草</a></li>
-</ul>
+    timeline-item{
+        display: block;
+        padding: 1rem;
+        background: #fff;
+        border: 1px solid rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        margin-bottom: 2rem;
+    }
+
+    timeline-item[data-type^="notice"] {
+        border-left: 4px solid #ffc107;
+    }
+
+    timeline-item[data-type^="notice"] > div:first-of-type{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: rgba(0, 0, 0, 0.62);
+    }
+
+    timeline-item[data-type^="notice"] > div:last-of-type h5 {
+        font-weight: bold;
+        font-family: 'Roboto Slab';
+        margin-bottom: 1rem;
+    }
+
+    .cm-avatar{
+        width:2.5rem;
+        height:2.5rem;
+        border-radius: 200px;
+    }
+
+    .cm-anno{
+        color:rgba(0,0,0,0.54);
+        margin-bottom: 1.5rem;
+        font-weight: 500;
+    }
+
+    #NOJFocusCarousel{
+        border-radius: 4px;
+        overflow: hidden;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 30px;
+    }
+
+    .carousel-item img{
+        transform: scale(1.01);
+    }
+
+    empty-container{
+        display:block;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    empty-container i{
+        font-size:5rem;
+        color:rgba(0,0,0,0.42);
+    }
+
+    empty-container p{
+        font-size: 1rem;
+        color:rgba(0,0,0,0.54);
+    }
+
+</style>
+
+<div class="container mundb-standard-container">
+    <div class="row">
+        <div class="col-sm-12 col-lg-8">
+            <div class="cm-title-section">
+                <h1>Welcome to NOJ!</h1>
+                <version-badge class="mb-5">
+                    <inline-div>Version</inline-div><inline-div>0.3.2-48-gc106d2c</inline-div>
+                </version-badge>
+            </div>
+                            <div id="NOJFocusCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                                                    <li data-target="#NOJFocusCarousel" data-slide-to="0" class=" active "></li>
+                                                    <li data-target="#NOJFocusCarousel" data-slide-to="1" class=""></li>
+                                                    <li data-target="#NOJFocusCarousel" data-slide-to="2" class=""></li>
+                                            </ol>
+                    <div class="carousel-inner">
+                                                    <div class="carousel-item  active ">
+                                <a href="https://acm.njupt.edu.cn/contest/120" target="_blank"><img class="d-block w-100" src="/static/img/carousel/201912monthly.png" alt=""></a>
+                            </div>
+                                                    <div class="carousel-item ">
+                                <a href="https://acm.njupt.edu.cn/problem/NOJ1001" target="_blank"><img class="d-block w-100" src="/static/img/carousel/phpandjs.png" alt=""></a>
+                            </div>
+                                                    <div class="carousel-item ">
+                                <a href="https://acm.njupt.edu.cn/babel" target="_blank"><img class="d-block w-100" src="/static/img/carousel/babel.png" alt=""></a>
+                            </div>
+                                            </div>
+                    <a class="carousel-control-prev" href="#NOJFocusCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#NOJFocusCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                        <p class="cm-anno mt-5"><i class="MDI power-plug"></i> We have currently support the following Babel Extensions:</p>
+            <div class="row">
+                                <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+                    <a href="/"><img src="/static/img/oj/noj/noj@2x.png" class="cm-oj img-fluid"></a>
+                </div>
+                                <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+                    <a href="https://codeforces.com"><img src="/static/img/oj/codeforces/codeforces@2x.png" class="cm-oj img-fluid"></a>
+                </div>
+                                <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+                    <a href="http://contest-hunter.org:83"><img src="/static/img/oj/contesthunter/contesthunter@2x.png" class="cm-oj img-fluid"></a>
+                </div>
+                                <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+                    <a href="http://poj.org"><img src="/static/img/oj/poj/poj@2x.png" class="cm-oj img-fluid"></a>
+                </div>
+                                <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+                    <a href="https://vijos.org"><img src="/static/img/oj/vijos/vijos@2x.png" class="cm-oj img-fluid"></a>
+                </div>
+                                <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+                    <a href="https://pintia.cn"><img src="/static/img/oj/pta/pta@2x.png" class="cm-oj img-fluid"></a>
+                </div>
+                                <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+                    <a href="https://uva.onlinejudge.org"><img src="/static/img/oj/uva/uva@2x.png" class="cm-oj img-fluid"></a>
+                </div>
+                                <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+                    <a href="http://acm.hdu.edu.cn"><img src="/static/img/oj/hdu/hdu@2x.png" class="cm-oj img-fluid"></a>
+                </div>
+                                <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+                    <a href="https://icpcarchive.ecs.baylor.edu"><img src="/static/img/oj/uvalive/uvalive@2x.png" class="cm-oj img-fluid"></a>
+                </div>
+                                <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+                    <a href="http://acm.zju.edu.cn/"><img src="/static/img/oj/zoj/zoj@2x.png" class="cm-oj img-fluid"></a>
+                </div>
+                                <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+                    <a href="https://atcoder.jp/"><img src="/static/img/oj/atcoder/atcoder@2x.png" class="cm-oj img-fluid"></a>
+                </div>
+                                <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+                    <a href="https://www.lydsy.com/"><img src="/static/img/oj/bzoj/bzoj@2x.png" class="cm-oj img-fluid"></a>
+                </div>
+                            </div>
+        </div>
+        <div class="col-sm-12 col-lg-4">
+            <p class="cm-anno"><i class="MDI newspaper"></i> Announcements</p>
+            <div>
+                                                            <timeline-container>
+                            <timeline-item data-type="notice">
+                                <div>
+                                    <div>admin <span class="wemd-green-text">&rtrif; 3 months ago</span></div>
+                                    <div><img src="/static/img/avatar/noj.png" class="cm-avatar"></div>
+                                </div>
+                                <div>
+                                    <h5>Happy Anniversary!</h5>
+                                    <p><p>It has been extactly one year since we initiate NOJ, thank you for your support!</p>
+</p>
+                                </div>
+                            </timeline-item>
+                        </timeline-container>
+                                            <timeline-container>
+                            <timeline-item data-type="notice">
+                                <div>
+                                    <div>admin <span class="wemd-green-text">&rtrif; 8 months ago</span></div>
+                                    <div><img src="/static/img/avatar/noj.png" class="cm-avatar"></div>
+                                </div>
+                                <div>
+                                    <h5>0.3.1 Citoniensis Released</h5>
+                                    <p><p>We are now updating NOJ and when it comes NOJ would be down for a few minutes. NOJ's problem submission are now also on halt for JudgeServer updating.</p>
+</p>
+                                </div>
+                            </timeline-item>
+                        </timeline-container>
+                                            <timeline-container>
+                            <timeline-item data-type="notice">
+                                <div>
+                                    <div>admin <span class="wemd-green-text">&rtrif; 8 months ago</span></div>
+                                    <div><img src="/static/img/avatar/noj.png" class="cm-avatar"></div>
+                                </div>
+                                <div>
+                                    <h5>HDU Back Online</h5>
+                                    <p><p>NOJ has fixed multiple issues involving HDU and finally we fixed all bugs. HDU is online now.</p>
+</p>
+                                </div>
+                            </timeline-item>
+                        </timeline-container>
+                                            <timeline-container>
+                            <timeline-item data-type="notice">
+                                <div>
+                                    <div>admin <span class="wemd-green-text">&rtrif; 8 months ago</span></div>
+                                    <div><img src="/static/img/avatar/noj.png" class="cm-avatar"></div>
+                                </div>
+                                <div>
+                                    <h5>Stop Accepting HDU </h5>
+                                    <p><p>We are fixing issues regarding HDU problem judging. For a moment HDU would be hanged up. Your waiting submission would still be on queue until they got fixed.</p>
+</p>
+                                </div>
+                            </timeline-item>
+                        </timeline-container>
+                                            <timeline-container>
+                            <timeline-item data-type="notice">
+                                <div>
+                                    <div>admin <span class="wemd-green-text">&rtrif; 8 months ago</span></div>
+                                    <div><img src="/static/img/avatar/noj.png" class="cm-avatar"></div>
+                                </div>
+                                <div>
+                                    <h5>0.3.0 Orca Released</h5>
+                                    <p><p>NOJ has announced it's third major version, named Orca. with tons of new features Orca would be a next milestone.</p>
+</p>
+                                </div>
+                            </timeline-item>
+                        </timeline-container>
+                                            <timeline-container>
+                            <timeline-item data-type="notice">
+                                <div>
+                                    <div>admin <span class="wemd-green-text">&rtrif; 8 months ago</span></div>
+                                    <div><img src="/static/img/avatar/noj.png" class="cm-avatar"></div>
+                                </div>
+                                <div>
+                                    <h5>Official QQ Group</h5>
+                                    <p><p>NOJ has announced it's official QQ group, <strong>668108264</strong>. We welcome all users to participate in and give us your feedback.</p>
+</p>
+                                </div>
+                            </timeline-item>
+                        </timeline-container>
+                                            <timeline-container>
+                            <timeline-item data-type="notice">
+                                <div>
+                                    <div>admin <span class="wemd-green-text">&rtrif; 10 months ago</span></div>
+                                    <div><img src="/static/img/avatar/noj.png" class="cm-avatar"></div>
+                                </div>
+                                <div>
+                                    <h5>Solution&#039;s Online</h5>
+                                    <p><p>We now have solution section for  all problems, welcome to submit your own solutions. NOJ's judger downs again for JSCPC reasons, we estimated the new judger would be online in a week or less.</p>
+</p>
+                                </div>
+                            </timeline-item>
+                        </timeline-container>
+                                                </div>
+        </div>
+    </div>
 </div>
-</aside><aside id="custom_html-2" class="widget_text widget widget_custom_html"><h2 class="widget-title">友情链接</h2><div class="textwidget custom-html-widget"><ul style="line-height: 2;">
-<li style="list-style: inherit;"><a href="https://twd2.me/" target="_blank">Wandai[PG] Blog</a></li>
-<li style="list-style: inherit;"><a href="https://soha.moe/" target="_blank">潜入海底</a></li>
-<li style="list-style: inherit;"><a href="https://www.luogu.org/" target="_blank">洛谷</a></li>
-<li style="list-style: inherit;"><a href="https://www.zsxsoft.com/" target="_blank">zsx</a></li>
-<li style="list-style: inherit;"><a href="https://renjikai.com/" target="_blank">杰克部落</a></li>
-<li style="list-style: inherit;"><a href="http://cfzhao.com/" target="_blank">CodeFucker Zhao</a></li>
-<li style="list-style: inherit;"><a href="http://www.ljhedp.cn/" target="_blank">书海扬帆的博客</a></li>
-<li style="list-style: inherit;"><a href="http://zhiyi.live/" target="_blank">MoonChasing</a></li>
-<li style="list-style: inherit;"><a href="http://ex-jason.pw/" target="_blank">ex-jason的博客</a></li>
-</ul>
-<p>
-	可以发送邮件到zsgsdesign@gmail.com申请哦。</p></div></aside><aside id="text-3" class="widget widget_text"><h2 class="widget-title">推荐</h2>			<div class="textwidget"><img src="https://www.johnzhang.xyz/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif" style="width;100%;    border-radius: 2px;border: 1px solid #ddd;" data-lazy-src="https://www.johnzhang.xyz/wp-content/uploads/2016/05/5df7ae02-b82c-4588-ae85-231394ed5ed6.jpg"><noscript><img src="https://www.johnzhang.xyz/wp-content/uploads/2016/05/5df7ae02-b82c-4588-ae85-231394ed5ed6.jpg" style="width;100%;    border-radius: 2px;border: 1px solid #ddd;"/></noscript>
-<center><h2>Microsoft HoloLens</h2>
-<p>Transform your world.</p>
-<a class="btn btn-info" target="_blank" href="https://www.microsoft.com/microsoft-hololens/en-us">了解更多</a></center></div>
-		</aside><aside id="eu_cookie_law_widget-2" class="widget widget_eu_cookie_law_widget"><div
-	class="hide-on-button"
-	data-hide-timeout="30"
-	id="eu-cookie-law"
->
-	<form method="post">
-		<input type="submit" value="接受与关闭" class="accept" />
-	</form>
-
-	隐私和 Cookie：该站点使用 Cookie。		<br />
-		如需了解更多信息，以及如何删除或阻止这些信息，请参见此处：
-	<a href="https://jetpack.com/support/cookies/" >
-		我们的 Cookie 政策	</a>
-</div>
-</aside>			</div><!-- .widget-area -->
-		
-	</div><!-- .secondary -->
-
-	</div><!-- .sidebar -->
-
-	<div id="content" class="site-content">
-
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
-
-		
-			
-			
-<article id="post-942" class="post-942 post type-post status-publish format-standard has-post-thumbnail hentry category-programming category-essay tag-acm tag-laravel tag-noj tag-php">
-	
-	<a class="post-thumbnail" href="https://www.johnzhang.xyz/archives/942" aria-hidden="true">
-		<img width="825" height="510" src="https://www.johnzhang.xyz/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="NOJ——我是如何从零开始创造OJ的（一）" data-lazy-src="https://www.johnzhang.xyz/wp-content/uploads/2019/05/noj-825x510.png" data-lazy-srcset="https://www.johnzhang.xyz/wp-content/uploads/2019/05/noj-825x510.png 825w, https://www.johnzhang.xyz/wp-content/uploads/2019/05/noj-300x185.png 300w, https://www.johnzhang.xyz/wp-content/uploads/2019/05/noj-768x474.png 768w, https://www.johnzhang.xyz/wp-content/uploads/2019/05/noj-1024x632.png 1024w" data-lazy-sizes="(max-width: 825px) 100vw, 825px" />	</a>
-
-	
-	<header class="entry-header">
-		<h2 class="entry-title"><a href="https://www.johnzhang.xyz/archives/942" rel="bookmark">NOJ——我是如何从零开始创造OJ的（一）</a></h2>	</header><!-- .entry-header -->
-
-	<div class="entry-content">
-		<p>NOJ 是一个开源的、基于 Laravel 构建的现代化 Online Judge，开源于 GitHub，详见<a href="https://github.com/ZsgsDesign/NOJ">ZsgsDeisng/NOJ</a>。<br />
- <a href="https://www.johnzhang.xyz/archives/942#more-942" class="more-link">继续阅读<span class="screen-reader-text">NOJ——我是如何从零开始创造 OJ 的（一）</span></a></p>
-	</div><!-- .entry-content -->
-
-	
-	<footer class="entry-footer">
-		<span class="posted-on"><span class="screen-reader-text">发布于 </span><a href="https://www.johnzhang.xyz/archives/942" rel="bookmark"><time class="entry-date published" datetime="2019-05-29T01:48:49+08:00">2019年5月29日</time><time class="updated" datetime="2019-05-29T01:49:30+08:00">2019年5月29日</time></a></span><span class="cat-links"><span class="screen-reader-text">分类 </span><a href="https://www.johnzhang.xyz/archives/category/programming" rel="category tag">编程</a>、<a href="https://www.johnzhang.xyz/archives/category/essay" rel="category tag">随笔</a></span><span class="tags-links"><span class="screen-reader-text">标签 </span><a href="https://www.johnzhang.xyz/archives/tag/acm" rel="tag">ACM</a>、<a href="https://www.johnzhang.xyz/archives/tag/laravel" rel="tag">Laravel</a>、<a href="https://www.johnzhang.xyz/archives/tag/noj" rel="tag">NOJ</a>、<a href="https://www.johnzhang.xyz/archives/tag/php" rel="tag">php</a></span><span class="comments-link"><a href="https://www.johnzhang.xyz/archives/942#comments"><span class="screen-reader-text">NOJ——我是如何从零开始创造OJ的（一）</span>有4条评论</a></span>			</footer><!-- .entry-footer -->
-
-</article><!-- #post-## -->
-
-<article id="post-938" class="post-938 post type-post status-publish format-standard has-post-thumbnail hentry category-programming category-essay tag-acm tag-laravel tag-noj tag-php">
-	
-	<a class="post-thumbnail" href="https://www.johnzhang.xyz/archives/938" aria-hidden="true">
-		<img width="825" height="510" src="https://www.johnzhang.xyz/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="NOJ——我是如何从零开始创造OJ的（序）" data-lazy-src="https://www.johnzhang.xyz/wp-content/uploads/2019/05/noj-825x510.png" data-lazy-srcset="https://www.johnzhang.xyz/wp-content/uploads/2019/05/noj-825x510.png 825w, https://www.johnzhang.xyz/wp-content/uploads/2019/05/noj-300x185.png 300w, https://www.johnzhang.xyz/wp-content/uploads/2019/05/noj-768x474.png 768w, https://www.johnzhang.xyz/wp-content/uploads/2019/05/noj-1024x632.png 1024w" data-lazy-sizes="(max-width: 825px) 100vw, 825px" />	</a>
-
-	
-	<header class="entry-header">
-		<h2 class="entry-title"><a href="https://www.johnzhang.xyz/archives/938" rel="bookmark">NOJ——我是如何从零开始创造OJ的（序）</a></h2>	</header><!-- .entry-header -->
-
-	<div class="entry-content">
-		<p>NOJ 是一个开源的、基于 Laravel 构建的现代化 Online Judge，开源于 GitHub，详见<a href="https://github.com/ZsgsDesign/NOJ">ZsgsDeisng/NOJ</a>。<br />
- <a href="https://www.johnzhang.xyz/archives/938#more-938" class="more-link">继续阅读<span class="screen-reader-text">NOJ——我是如何从零开始创造 OJ 的（序）</span></a></p>
-	</div><!-- .entry-content -->
-
-	
-	<footer class="entry-footer">
-		<span class="posted-on"><span class="screen-reader-text">发布于 </span><a href="https://www.johnzhang.xyz/archives/938" rel="bookmark"><time class="entry-date published" datetime="2019-05-28T00:35:36+08:00">2019年5月28日</time><time class="updated" datetime="2019-05-28T00:36:03+08:00">2019年5月28日</time></a></span><span class="cat-links"><span class="screen-reader-text">分类 </span><a href="https://www.johnzhang.xyz/archives/category/programming" rel="category tag">编程</a>、<a href="https://www.johnzhang.xyz/archives/category/essay" rel="category tag">随笔</a></span><span class="tags-links"><span class="screen-reader-text">标签 </span><a href="https://www.johnzhang.xyz/archives/tag/acm" rel="tag">ACM</a>、<a href="https://www.johnzhang.xyz/archives/tag/laravel" rel="tag">Laravel</a>、<a href="https://www.johnzhang.xyz/archives/tag/noj" rel="tag">NOJ</a>、<a href="https://www.johnzhang.xyz/archives/tag/php" rel="tag">php</a></span><span class="comments-link"><a href="https://www.johnzhang.xyz/archives/938#respond"><span class="screen-reader-text">于NOJ——我是如何从零开始创造OJ的（序）</span>留下评论</a></span>			</footer><!-- .entry-footer -->
-
-</article><!-- #post-## -->
-
-<article id="post-929" class="post-929 post type-post status-publish format-standard hentry category-programming tag-acm tag-c tag-codeforces tag-noj tag-php tag-23">
-	
-	<header class="entry-header">
-		<h2 class="entry-title"><a href="https://www.johnzhang.xyz/archives/929" rel="bookmark">NOJ Rating System</a></h2>	</header><!-- .entry-header -->
-
-	<div class="entry-content">
-		<p>Inspired by CodeForces, the basic idea of NOJ Rating System is to generalize Elo rating to support games with multiple participants.<br />
- <a href="https://www.johnzhang.xyz/archives/929#more-929" class="more-link">继续阅读<span class="screen-reader-text">NOJ Rating System</span></a></p>
-	</div><!-- .entry-content -->
-
-	
-	<footer class="entry-footer">
-		<span class="posted-on"><span class="screen-reader-text">发布于 </span><a href="https://www.johnzhang.xyz/archives/929" rel="bookmark"><time class="entry-date published" datetime="2019-05-16T11:21:58+08:00">2019年5月16日</time><time class="updated" datetime="2019-05-16T11:28:12+08:00">2019年5月16日</time></a></span><span class="cat-links"><span class="screen-reader-text">分类 </span><a href="https://www.johnzhang.xyz/archives/category/programming" rel="category tag">编程</a></span><span class="tags-links"><span class="screen-reader-text">标签 </span><a href="https://www.johnzhang.xyz/archives/tag/acm" rel="tag">ACM</a>、<a href="https://www.johnzhang.xyz/archives/tag/c" rel="tag">C++</a>、<a href="https://www.johnzhang.xyz/archives/tag/codeforces" rel="tag">CodeForces</a>、<a href="https://www.johnzhang.xyz/archives/tag/noj" rel="tag">NOJ</a>、<a href="https://www.johnzhang.xyz/archives/tag/php" rel="tag">php</a>、<a href="https://www.johnzhang.xyz/archives/tag/%e7%ae%97%e6%b3%95" rel="tag">算法</a></span><span class="comments-link"><a href="https://www.johnzhang.xyz/archives/929#respond"><span class="screen-reader-text">于NOJ Rating System</span>留下评论</a></span>			</footer><!-- .entry-footer -->
-
-</article><!-- #post-## -->
-
-<article id="post-913" class="post-913 post type-post status-publish format-standard has-post-thumbnail hentry category-share category-programming tag-c tag-19 tag-23">
-	
-	<a class="post-thumbnail" href="https://www.johnzhang.xyz/archives/913" aria-hidden="true">
-		<img width="599" height="467" src="https://www.johnzhang.xyz/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="战狼源代码赏析" data-lazy-src="https://www.johnzhang.xyz/wp-content/uploads/2019/01/iac.png" data-lazy-srcset="https://www.johnzhang.xyz/wp-content/uploads/2019/01/iac.png 599w, https://www.johnzhang.xyz/wp-content/uploads/2019/01/iac-300x234.png 300w" data-lazy-sizes="(max-width: 599px) 100vw, 599px" />	</a>
-
-	
-	<header class="entry-header">
-		<h2 class="entry-title"><a href="https://www.johnzhang.xyz/archives/913" rel="bookmark">战狼源代码赏析</a></h2>	</header><!-- .entry-header -->
-
-	<div class="entry-content">
-		<p>要考 C 语言啦，我们不如一起看看一些代码哦。<br />
- <a href="https://www.johnzhang.xyz/archives/913#more-913" class="more-link">继续阅读<span class="screen-reader-text">战狼源代码赏析</span></a></p>
-	</div><!-- .entry-content -->
-
-	
-	<footer class="entry-footer">
-		<span class="posted-on"><span class="screen-reader-text">发布于 </span><a href="https://www.johnzhang.xyz/archives/913" rel="bookmark"><time class="entry-date published" datetime="2019-01-15T22:18:33+08:00">2019年1月15日</time><time class="updated" datetime="2019-01-15T22:21:34+08:00">2019年1月15日</time></a></span><span class="cat-links"><span class="screen-reader-text">分类 </span><a href="https://www.johnzhang.xyz/archives/category/share" rel="category tag">分享</a>、<a href="https://www.johnzhang.xyz/archives/category/programming" rel="category tag">编程</a></span><span class="tags-links"><span class="screen-reader-text">标签 </span><a href="https://www.johnzhang.xyz/archives/tag/c" rel="tag">C++</a>、<a href="https://www.johnzhang.xyz/archives/tag/%e7%94%b5%e5%bd%b1" rel="tag">电影</a>、<a href="https://www.johnzhang.xyz/archives/tag/%e7%ae%97%e6%b3%95" rel="tag">算法</a></span><span class="comments-link"><a href="https://www.johnzhang.xyz/archives/913#comments"><span class="screen-reader-text">战狼源代码赏析</span>有2条评论</a></span>			</footer><!-- .entry-footer -->
-
-</article><!-- #post-## -->
-
-<article id="post-906" class="post-906 post type-post status-publish format-standard has-post-thumbnail hentry category-share category-programming tag-electron tag-git tag-gitignore">
-	
-	<a class="post-thumbnail" href="https://www.johnzhang.xyz/archives/906" aria-hidden="true">
-		<img width="825" height="510" src="https://www.johnzhang.xyz/wp-content/plugins/jetpack/modules/lazy-images/images/1x1.trans.gif" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="适用于Electron的gitignore" data-lazy-src="https://www.johnzhang.xyz/wp-content/uploads/2019/01/electron-825x510.png" />	</a>
-
-	
-	<header class="entry-header">
-		<h2 class="entry-title"><a href="https://www.johnzhang.xyz/archives/906" rel="bookmark">适用于Electron的gitignore</a></h2>	</header><!-- .entry-header -->
-
-	<div class="entry-content">
-		<p>写项目用到了。分享下。<br />
- <a href="https://www.johnzhang.xyz/archives/906#more-906" class="more-link">继续阅读<span class="screen-reader-text">适用于 Electron 的 gitignore</span></a></p>
-	</div><!-- .entry-content -->
-
-	
-	<footer class="entry-footer">
-		<span class="posted-on"><span class="screen-reader-text">发布于 </span><a href="https://www.johnzhang.xyz/archives/906" rel="bookmark"><time class="entry-date published updated" datetime="2019-01-09T01:12:34+08:00">2019年1月9日</time></a></span><span class="cat-links"><span class="screen-reader-text">分类 </span><a href="https://www.johnzhang.xyz/archives/category/share" rel="category tag">分享</a>、<a href="https://www.johnzhang.xyz/archives/category/programming" rel="category tag">编程</a></span><span class="tags-links"><span class="screen-reader-text">标签 </span><a href="https://www.johnzhang.xyz/archives/tag/electron" rel="tag">electron</a>、<a href="https://www.johnzhang.xyz/archives/tag/git" rel="tag">git</a>、<a href="https://www.johnzhang.xyz/archives/tag/gitignore" rel="tag">gitignore</a></span><span class="comments-link"><a href="https://www.johnzhang.xyz/archives/906#respond"><span class="screen-reader-text">于适用于Electron的gitignore</span>留下评论</a></span>			</footer><!-- .entry-footer -->
-
-</article><!-- #post-## -->
-
-	<nav class="navigation pagination" role="navigation">
-		<h2 class="screen-reader-text">文章导航</h2>
-		<div class="nav-links"><span aria-current='page' class='page-numbers current'><span class="meta-nav screen-reader-text">页 </span>1</span>
-<a class='page-numbers' href='https://www.johnzhang.xyz/page/2'><span class="meta-nav screen-reader-text">页 </span>2</a>
-<span class="page-numbers dots">&hellip;</span>
-<a class='page-numbers' href='https://www.johnzhang.xyz/page/21'><span class="meta-nav screen-reader-text">页 </span>21</a>
-<a class="next page-numbers" href="https://www.johnzhang.xyz/page/2">下一页</a></div>
-	</nav>
-		</main><!-- .site-main -->
-	</div><!-- .content-area -->
-
-
-	</div><!-- .site-content -->
-
-	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-									<a href="https://cn.wordpress.org/" class="imprint">
-				自豪地采用WordPress			</a>
-		</div><!-- .site-info -->
-	</footer><!-- .site-footer -->
-
-</div><!-- .site -->
-
-<div class="scroll-back-to-top-wrapper">
-	<span class="scroll-back-to-top-inner">
-					<i class="fa fa-sm fa-arrow-up"></i>
-			</span>
-</div><script type="text/javascript">
-	// 默认分享数据
-	ushare = {};
-	ushare.data = {
-		title: "适用于Electron的gitignore",
-		desc: "写项目用到了。分享下。",
-		url: "https://www.johnzhang.xyz/archives/906",
-		pic: "https://www.johnzhang.xyz/wp-content/uploads/2019/01/electron.png",
-	};
-
-	ushare.weibo_data = {
-		title: "「适用于Electron的gitignore」写项目用到了。分享下。",
-		url: "https://www.johnzhang.xyz/archives/906",
-		pic: "https://www.johnzhang.xyz/wp-content/uploads/2019/01/electron.png",
-		ralateUid: "",
-		appkey: ""
-	};
-
-	ushare.qq_data = {
-		title: "「适用于Electron的gitignore」写项目用到了。分享下。",
-		url: "https://www.johnzhang.xyz/archives/906",
-		pic: "https://www.johnzhang.xyz/wp-content/uploads/2019/01/electron.png",
-		ralateUid: "",
-		appkey: ""
-	};
-
-	ushare.qzone_data = {
-		url: ushare.data.url,
-		showcount: '0',/*是否显示分享总数,显示：'1'，不显示：'0' */
-		desc: '',/*默认分享理由(可选)*/
-		summary: ushare.data.desc,/*分享摘要(可选)*/
-		title: ushare.data.title,/*分享标题(可选)*/
-		site: "张佑杰的个人博客",/*分享来源 如：腾讯网(可选)*/
-		pics: ushare.data.pic, /*分享图片的路径(可选)*/
-	};
-
-	ushare.renren_data = {
-		resourceUrl : ushare.data.url,	//分享的资源Url
-		srcUrl : ushare.data.url,	//分享的资源来源Url,默认为header中的Referer,如果分享失败可以调整此值为resourceUrl试试
-		pic : ushare.data.pic,		//分享的主题图片Url
-		title : ushare.data.title,		//分享的标题
-		description : ushare.data.desc	//分享的详细描述
-	};
-
-	ushare.facebook_data = {
-		t: ushare.data.title,
-		u: ushare.data.url
-	};
-
-	ushare.twitter_data = {
-		text: "「适用于Electron的gitignore」写项目用到了。分享下。",
-		url: ushare.data.url,
-		via: "张佑杰的个人博客"
-	};
-
-	ushare.googleplus_data = {
-		t: ushare.data.title,
-		url: ushare.data.url
-	};
-</script>
-	<div style="display:none">
-	</div>
-		<script type="text/javascript">
-			window._idl = {};
-			_idl.campaign = "";
-			_idl.variant = "banner";
-			(function() {
-				var idl = document.createElement('script');
-				idl.type = 'text/javascript';
-				idl.async = true;
-				idl.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'members.internetdefenseleague.org/include/?url=' + (_idl.url || '') + '&campaign=' + (_idl.campaign || '') + '&variant=' + (_idl.variant || 'banner');
-				document.getElementsByTagName('body')[0].appendChild(idl);
-			})();
-		</script>
-		<script type='text/javascript'>
-/* Highlight Search Terms 1.5 ( RavanH - http://status301.net/wordpress-plugins/highlight-search-terms/ ) */
-var hlst_query = []; var hlst_areas = ["#groups-dir-list","#members-dir-list","div.bbp-topic-content,div.bbp-reply-content,li.bbp-forum-info,.bbp-topic-title,.bbp-reply-title","article","div.hentry","div.post","#content","#main","div.content","#middle","#container","div.container","div.page","#wrapper","body"];
-</script>
-<script type='text/javascript' src='https://www.johnzhang.xyz/wp-content/plugins/highlight-search-terms/hlst-extend.min.js?ver=1.5'></script>
-<script type='text/javascript' src='https://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=202012'></script>
-<script type='text/javascript'>
-/* <![CDATA[ */
-var scrollBackToTop = {"scrollDuration":"500","fadeDuration":"0.5"};
-/* ]]> */
-</script>
-<script type='text/javascript' src='https://www.johnzhang.xyz/wp-content/plugins/scroll-back-to-top/assets/js/scroll-back-to-top.js'></script>
-<script type='text/javascript'>
-/* <![CDATA[ */
-var ushare_object = {"ajaxurl":"https:\/\/www.johnzhang.xyz\/wp-admin\/admin-ajax.php","likes_nonce":"3c33ef48a4"};
-/* ]]> */
-</script>
-<script type='text/javascript' src='https://www.johnzhang.xyz/wp-content/plugins/ushare/assets/js/ushare.js'></script>
-<script type='text/javascript' src='https://secure.gravatar.com/js/gprofiles.js?ver=2020Maraa'></script>
-<script type='text/javascript'>
-/* <![CDATA[ */
-var WPGroHo = {"my_hash":""};
-/* ]]> */
-</script>
-<script type='text/javascript' src='https://www.johnzhang.xyz/wp-content/plugins/jetpack/modules/wpgroho.js?ver=5.0.8'></script>
-<script type='text/javascript' src='https://www.johnzhang.xyz/wp-content/themes/twentyfifteen/js/skip-link-focus-fix.js?ver=20141010'></script>
-<script type='text/javascript'>
-/* <![CDATA[ */
-var screenReaderText = {"expand":"<span class=\"screen-reader-text\">\u5c55\u5f00\u5b50\u83dc\u5355<\/span>","collapse":"<span class=\"screen-reader-text\">\u6298\u53e0\u5b50\u83dc\u5355<\/span>"};
-/* ]]> */
-</script>
-<script type='text/javascript' src='https://www.johnzhang.xyz/wp-content/themes/twentyfifteen/js/functions.js?ver=20150330'></script>
-<script type='text/javascript' src='https://www.johnzhang.xyz/wp-content/plugins/jetpack/_inc/build/widgets/eu-cookie-law/eu-cookie-law.min.js?ver=20170404'></script>
-<script type='text/javascript' src='https://www.johnzhang.xyz/wp-content/plugins/jetpack/modules/likes/queuehandler.js?ver=5.9.1'></script>
-<script type='text/javascript' src='https://www.johnzhang.xyz/wp-content/plugins/jetpack/_inc/build/lazy-images/js/lazy-images.min.js?ver=5.9.1'></script>
-<script type='text/javascript' src='https://www.johnzhang.xyz/wp-includes/js/wp-embed.min.js?ver=5.0.8'></script>
-<script type='text/javascript' src='https://stats.wp.com/e-202012.js' async='async' defer='defer'></script>
-<script type='text/javascript'>
-	_stq = window._stq || [];
-	_stq.push([ 'view', {v:'ext',j:'1:5.9.1',blog:'137214686',post:'0',tz:'8',srv:'www.johnzhang.xyz'} ]);
-	_stq.push([ 'clickTrackerInit', '137214686', '0' ]);
+<script>
+    window.addEventListener("load",function() {
+        notify("Welcome",'Hi, welcome back to the Fully new NOJ',"/static/img/notify/njupt.png",'welcome');
+    }, false);
 </script>
 
-</body>
+    
+    <footer class="d-print-none bg-dark center-on-small-only" style="flex-shrink: 0;flex-grow: 0">
+        <div class="mundb-footer text-light">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-4">
+                        <h5 class="cm-footer-title mb-4 mt-3 font-bold">NOJ</h5>
+                        <p>NOJ is an online judge developed by ICPC Team of Nanjing Universify of Posts and Telecommunications.</p>
+                    </div>
+
+                    <hr class="clearfix w-100 d-md-none">
+
+                    <div class="col-md-2 mx-auto">
+                        <h5 class="title mb-4 mt-3 font-bold">Services</h5>
+                        <p class="mb-1"><a href="/status">Judging Queue</a></p>
+                        <p class="mb-1"><a href="/system/info">System Info</a></p>
+                        <p class="mb-1"><a href="/tool/pastebin/create">PasteBin</a></p>
+                    </div>
+
+                    <hr class="clearfix w-100 d-md-none">
+
+                    <div class="col-md-2 mx-auto">
+                        <h5 class="title mb-4 mt-3 font-bold">Developments</h5>
+                        <p class="mb-1"><a href="https://github.com/ZsgsDesign/NOJ">Open Source</a></p>
+                        <p class="mb-1"><a href="#">API</a></p>
+                    </div>
+
+                    <hr class="clearfix w-100 d-md-none">
+
+                    <div class="col-md-2 mx-auto">
+                        <h5 class="title mb-4 mt-3 font-bold ">Support</h5>
+                        <p class="mb-0"><i class="MDI email"></i> acm@njupt.edu.cn</p>
+                        <p class="mb-0"><i class="MDI qqchat"></i> Group 668108264</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mundb-footer mundb-copyright">&copy; 2018-2020, NOJ. <a href="https://github.com/ZsgsDesign/NOJ" target="_blank"><i class="MDI github-circle"></i></a></div>
+    </footer>
+    <script src="/static/library/jquery/dist/jquery.min.js"></script>
+    <script src="/static/library/popper.js/dist/umd/popper.min.js"></script>
+    <script src="/static/library/bootstrap-material-design/dist/js/bootstrap-material-design.min.js"></script>
+    <script>
+    window.addEventListener("load",function() {
+        $("body").append(`
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-52979913-2"><\/script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+
+                gtag('config', 'UA-52979913-2');
+            <\/script>
+        `);
+    });
+</script>
+
+<script>
+function notify(title,body,icon="/static/img/njupt.png",tag="default"){
+    if (window.Notification) {
+        showMess(title,body,icon,tag);
+    } else {
+        console.log("Doesn't Support Web Notifications API");
+    }
+}
+
+function showMess(title,body,icon,tag){
+    if(window.Notification && Notification.permission !== "denied") {
+        Notification.requestPermission(function(status) {
+            if (status === "granted") {
+                var m = new Notification(title, {
+                    body: body,
+                    tag: tag,
+                    icon: icon
+                });
+                m.onclick = function () {
+                    window.focus();
+                }
+            } else{
+                console.log("Doesn't Support Web Notification Entity");
+            }
+        });
+    }
+}
+</script>
+<script>
+    $(document).ready(function () { $('body').bootstrapMaterialDesign();$('[data-toggle="tooltip"]').tooltip(); });
+    window.addEventListener("load",function() {
+
+        $('loading').css({"opacity":"0","pointer-events":"none"});
+
+        // Console Text
+
+        var consoleSVG = "data:image/svg+xml,<svg version='1.1' id='Ebene_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='600px' height='100px' viewBox='0 0 600 100'> <style type='text/css'> <![CDATA[ text %7B filter: url(%23filter); fill: black; font-family: 'Share Tech Mono', consolas, sans-serif; font-size: 100px; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; %7D ]]> </style> <defs> <filter id='filter'> <feFlood flood-color='white' result='black' /> <feFlood flood-color='red' result='flood1' /> <feFlood flood-color='limegreen' result='flood2' /> <feOffset in='SourceGraphic' dx='3' dy='0' result='off1a'/> <feOffset in='SourceGraphic' dx='2' dy='0' result='off1b'/> <feOffset in='SourceGraphic' dx='-3' dy='0' result='off2a'/> <feOffset in='SourceGraphic' dx='-2' dy='0' result='off2b'/> <feComposite in='flood1' in2='off1a' operator='in' result='comp1' /> <feComposite in='flood2' in2='off2a' operator='in' result='comp2' /> <feMerge x='0' width='100%25' result='merge1'> <feMergeNode in = 'black' /> <feMergeNode in = 'comp1' /> <feMergeNode in = 'off1b' /> <animate attributeName='y' id = 'y' dur ='4s' values = '104px; 104px; 30px; 105px; 30px; 2px; 2px; 50px; 40px; 105px; 105px; 20px; 6%C3%9Fpx; 40px; 104px; 40px; 70px; 10px; 30px; 104px; 102px' keyTimes = '0; 0.362; 0.368; 0.421; 0.440; 0.477; 0.518; 0.564; 0.593; 0.613; 0.644; 0.693; 0.721; 0.736; 0.772; 0.818; 0.844; 0.894; 0.925; 0.939; 1' repeatCount = 'indefinite' /> <animate attributeName='height' id = 'h' dur ='4s' values = '10px; 0px; 10px; 30px; 50px; 0px; 10px; 0px; 0px; 0px; 10px; 50px; 40px; 0px; 0px; 0px; 40px; 30px; 10px; 0px; 50px' keyTimes = '0; 0.362; 0.368; 0.421; 0.440; 0.477; 0.518; 0.564; 0.593; 0.613; 0.644; 0.693; 0.721; 0.736; 0.772; 0.818; 0.844; 0.894; 0.925; 0.939; 1' repeatCount = 'indefinite' /> </feMerge> <feMerge x='0' width='100%25' y='60px' height='65px' result='merge2'> <feMergeNode in = 'black' /> <feMergeNode in = 'comp2' /> <feMergeNode in = 'off2b' /> <animate attributeName='y' id = 'y' dur ='4s' values = '103px; 104px; 69px; 53px; 42px; 104px; 78px; 89px; 96px; 100px; 67px; 50px; 96px; 66px; 88px; 42px; 13px; 100px; 100px; 104px;' keyTimes = '0; 0.055; 0.100; 0.125; 0.159; 0.182; 0.202; 0.236; 0.268; 0.326; 0.357; 0.400; 0.408; 0.461; 0.493; 0.513; 0.548; 0.577; 0.613; 1' repeatCount = 'indefinite' /> <animate attributeName='height' id = 'h' dur = '4s' values = '0px; 0px; 0px; 16px; 16px; 12px; 12px; 0px; 0px; 5px; 10px; 22px; 33px; 11px; 0px; 0px; 10px' keyTimes = '0; 0.055; 0.100; 0.125; 0.159; 0.182; 0.202; 0.236; 0.268; 0.326; 0.357; 0.400; 0.408; 0.461; 0.493; 0.513; 1' repeatCount = 'indefinite' /> </feMerge> <feMerge> <feMergeNode in='SourceGraphic' /> <feMergeNode in='merge1' /> <feMergeNode in='merge2' /> </feMerge> </filter> </defs> <g> <text x='0' y='100'>NOJ</text> </g> </svg>";
+        var consoleCSS = "background: url(\"" + consoleSVG + "\") left top no-repeat; font-size: 100px;line-height:140px;";
+        console.log('%c   ', consoleCSS);
+        console.info("\nNOJ - Nanjing University of Posts and Telecommunications Online Judge\n\nNOJ Development Team Leader: John Zhang\nOrganization: Association of Advanced Algorithms of NJUPT\nDevelopers: John Zhang, David Diao and other dedicated contributor of the open-source community\nVersion: 0.3.2-48-gc106d2c\nInsider Alias: CodeMaster\n\n");
+
+        $('.modal').on('shown.bs.modal', function (e) {
+            changeDepth();
+        });
+
+        if($('#nav-username').length != 0){
+            var uid = $('#nav-username').attr('data-uid');
+            $.ajax({
+                type: 'POST',
+                url: '/ajax/message/unread',
+                data: {
+                    uid: uid
+                },
+                dataType: 'json',
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }, success: function(result){
+                    if(result.ret == '200' && result.data.length != 0){
+                        $("#message-tip").attr('title',`You have ${result.data.length} new messages.`)
+                        $("#message-tip").tooltip('dispose');
+                        $("#message-tip").tooltip();
+                        window['message_tip'] = setInterval(() => {
+                            $("#message-tip").animate({
+                                opacity: !parseInt($('#message-tip').css('opacity'))
+                            },200)
+                        }, 400);
+                    }else{
+                        $("#message-tip").attr('title',`You have no messages.`);
+                        $("#message-tip").tooltip('dispose');
+                        $("#message-tip").tooltip();
+                    }
+                    console.log(result);
+                }, error: function(xhr, type){
+                    console.log('Ajax error!');
+                    ajaxing=false;
+                }
+            });
+        }
+
+    }, false);
+
+    function changeDepth(){
+        var interv=0;
+        $(".modal-backdrop").each(function(){
+            $(this).css("z-index",1040+interv);
+            interv+=100;
+        });
+        interv=0;
+        $(".modal.show").each(function(){
+            $(this).css("z-index",1050+interv);
+            interv+=100;
+        });
+    }
+
+    function alert(content, title = "Notice", icon = "information-outline", backdrop = "static"){
+        var id = new Date().getTime();
+        if(backdrop !== "static") backdrop = backdrop?"true":"false";
+        $('body').append(`
+            <div class="modal fade" id="notice${id}" data-backdrop="${backdrop}" tabindex="-1" role="dialog">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-alert" role="document">
+                    <div class="modal-content sm-modal">
+                        <div class="modal-header">
+                            <h5 class="modal-title"><i class="MDI ${icon}"></i> ${title}</h5>
+                        </div>
+                        <div class="modal-body">
+                            ${content}
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `);
+        $(`#notice${id}`).on('shown.bs.modal', function (e) {
+            changeDepth();
+        });
+        $(`#notice${id}`).modal('toggle');
+    }
+
+    function confirm ({content="",title="Confirm",icon="information-outline",backdrop="static",noText="Cancel",yesText="OK"}={},callback=function(deny){}){
+        var id = new Date().getTime();
+        if(backdrop !== "static") backdrop = backdrop?"true":"false";
+        $('body').append(`
+            <div class="modal fade" id="notice${id}" data-backdrop="${backdrop}" tabindex="-1" role="dialog">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-alert" role="document">
+                    <div class="modal-content sm-modal">
+                        <div class="modal-header">
+                            <h5 class="modal-title"><i class="MDI ${icon}"></i> ${title}</h5>
+                        </div>
+                        <div class="modal-body">
+                            ${content}
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" id="confirmDeny${id}" class="btn btn-secondary" data-dismiss="modal">${noText}</button>
+                            <button type="button" id="confirmDone${id}" class="btn btn-primary" data-dismiss="modal">${yesText}</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `);
+        $(`#confirmDone${id}`).on('click',function(){
+            callback(false);
+        });
+        $(`#confirmDeny${id}`).on('click',function(){
+            callback(true);
+        });
+        $(`#notice${id}`).on('shown.bs.modal', function (e) {
+            changeDepth();
+        });
+        $(`#notice${id}`).modal('toggle');
+    }
+
+    function prompt ({content="",title="Prompt",placeholder="Input Field",value,icon="information-outline",backdrop="static"}={},callback=function(deny,text){}){
+        var id = new Date().getTime();
+        if(backdrop !== "static") backdrop = backdrop?"true":"false";
+        // placeholder = placeholder!==undefined ? ` placeholder=${placeholder} `:"";
+        // value = value!==undefined ? ` value=${value} `:"";
+        $('body').append(`
+            <div class="modal fade" id="notice${id}" data-backdrop="${backdrop}" tabindex="-1" role="dialog">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-alert" role="document">
+                    <div class="modal-content sm-modal">
+                        <div class="modal-header">
+                            <h5 class="modal-title"><i class="MDI ${icon}"></i> ${title}</h5>
+                        </div>
+                        <div class="modal-body">
+                            ${content}
+                            <div class="form-group bmd-form-group">
+                                <label for="noticeInput${id}" class="bmd-label-floating">${placeholder}</label>
+                                <input id="noticeInput${id}" type="text" class="form-control" autocomplete="off">
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" id="promptDeny${id}" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                            <button type="button" id="promptDone${id}" class="btn btn-primary" data-dismiss="modal">OK</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `);
+        $(`#noticeInput${id}`).attr("value",value);
+        $(`#notice${id}`).bootstrapMaterialDesign();
+        $(`#promptDeny${id}`).on('click',function(){
+            callback(true,$(`#noticeInput${id}`)[0].value);
+        });
+        $(`#promptDone${id}`).on('click',function(){
+            callback(false,$(`#noticeInput${id}`)[0].value);
+        });
+        $(`#notice${id}`).on('shown.bs.modal', function (e) {
+            changeDepth();
+        });
+        $(`#notice${id}`).modal('toggle');
+    }
+
+    function changeText({selector="",text="",css={},fadeOutTime=100,fadeInTime=200} = {},callback=function(){}){
+        $(selector).animate({opacity : 0},100,function(){
+            css['opacity'] = 1;
+            $(selector).text(text);
+            $(selector).animate(css,200,function(){
+                callback();
+            });
+        })
+    }
+
+    function empty(test){
+        return test.match(/^\s*$/);
+    }
+
+    function setCookie(c_name,value,expiredays)
+    {
+        var exdate=new Date();
+        exdate.setDate(exdate.getDate()+expiredays);
+        document.cookie=c_name+ "=" +escape(value)+((expiredays==null) ? "" : ";expires="+exdate.toGMTString()) + ";domain=acm.njupt.edu.cn";
+    }
+
+    function delay(ms){
+        return new Promise(resolve => setTimeout(resolve, ms));
+    }
+</script>
+    </body>
+
 </html>
