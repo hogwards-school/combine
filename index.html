@@ -1,768 +1,595 @@
 
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Home | NOJ</title>
-    <!-- Copyright Information -->
-    <meta name="author" content="">
-    <meta name="organization" content="">
-    <meta name="developer" content="">
-    <meta name="version" content="">
-    <meta name="subversion" content="">
-    <!-- SEO Information -->
-    <meta name="keywords" content="NOJ,NJUPT Online Judge,noip,noi,OJ,acm,icpc,onlineJudge,NUPT Online Judge" />
-    <meta name="description" content="NOJ is yet another Online Judge providing you functions like problem solving, discussing, solutions, groups, contests and ranking system." />
-    <!-- CSRF Token -->
-    <meta name="csrf-token" content="BRyFubDyLRehkHBlVR3jIpdwQqrGigtsvNKXsJzS">
-    <!-- Necessarily Declarations -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="renderer" content="webkit">
-    <meta http-equiv="Cache-Control" content="no-siteapp" />
-    <link rel="alternate icon" type="image/png" href="/favicon.png">
-    <!-- OpenSearch -->
-    <link rel="search" type="application/opensearchdescription+xml" title="NOJ" href="/opensearch.xml">
-    <!-- Mobile Display Declarations -->
-    <meta name="apple-touch-fullscreen" content="yes">
-    <meta name="theme-color" content="#3E4551">
-    <!-- Desktop App Declarations -->
-    <meta name="msapplication-TileColor" content="#3E4551">
-    <!-- Third-Party Declarations -->
-    <meta name="google-site-verification" content="u46lDlbRfXrmpoVSn02THlqhRO8LvFbESK98U7JqxTg" />
-    <meta name="baidu-site-verification" content="8vtAmt2tnZ" />
-    <!-- Loading Style -->
-    <style>
-        loading>div {
-            text-align: center;
-        }
-
-        loading p {
-            font-weight: 300;
-        }
-
-        loading {
-            display: flex;
-            z-index: 999;
-            position: fixed;
-            top: 0;
-            bottom: 0;
-            right: 0;
-            left: 0;
-            justify-content: center;
-            align-items: center;
-            background: #f5f5f5;
-            transition: .2s ease-out .0s;
-            opacity: 1;
-        }
-
-        .lds-ellipsis {
-            display: inline-block;
-            position: relative;
-            width: 64px;
-            height: 64px;
-        }
-
-        .lds-ellipsis div {
-            position: absolute;
-            top: 27px;
-            width: 11px;
-            height: 11px;
-            border-radius: 50%;
-            background: rgba(0, 0, 0, .54);
-            animation-timing-function: cubic-bezier(0, 1, 1, 0);
-        }
-
-        .lds-ellipsis div:nth-child(1) {
-            left: 6px;
-            animation: lds-ellipsis1 0.6s infinite;
-        }
-
-        .lds-ellipsis div:nth-child(2) {
-            left: 6px;
-            animation: lds-ellipsis2 0.6s infinite;
-        }
-
-        .lds-ellipsis div:nth-child(3) {
-            left: 26px;
-            animation: lds-ellipsis2 0.6s infinite;
-        }
-
-        .lds-ellipsis div:nth-child(4) {
-            left: 45px;
-            animation: lds-ellipsis3 0.6s infinite;
-        }
-
-        @keyframes  lds-ellipsis1 {
-            0% {
-                transform: scale(0);
-            }
-            100% {
-                transform: scale(1);
-            }
-        }
-
-        @keyframes  lds-ellipsis3 {
-            0% {
-                transform: scale(1);
-            }
-            100% {
-                transform: scale(0);
-            }
-        }
-
-        @keyframes  lds-ellipsis2 {
-            0% {
-                transform: translate(0, 0);
-            }
-            100% {
-                transform: translate(19px, 0);
-            }
-        }
-    </style>
+	
+	
+	
+	<meta name="keywords" content="简至教育云,人人通,智慧教育,智慧校园,数字化校园,教育信息化,三通两平台,班班通,教育管理云平台,教育资源云平台,数字化学习,互动学习,平安校园,家校互动,翼校通,开放课堂,智能学生证,宝宝在线" />
+	<meta name="description" content="简至教育云提供教育门户、行政办公、校园安全、考务管理、成绩分析、智能课表、教师专业发展、学生发展评价、档案管理、资产管理、电子备课、网络教研、智慧教室、班班通、资源中心、微课频道、互动学习等功能模块，涵盖教育信息化的教育管理、教学应用、资产管理、资源建设与共享、学生学习等各个方面" />
+	<meta baidu-gxt-verify-token="0ebfc37d78d587cf39330465063f4990">
+	<title>简至教育云_教育人人通|拉近家校间的距离</title>
+	<link rel="stylesheet" href="/zhxy/resources/css/basetheme/style.css" type="text/css" />
+	<script type="text/javascript" src="/zhxy/resources/js/jquery-1.7.2.min.js"></script>
+	
 </head>
-
-<body style="display: flex;flex-direction: column;min-height: 100vh;">
-    <!-- Loading -->
-    <loading>
-        <div>
-            <div class="lds-ellipsis">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-            <p>Preparing NOJ</p>
-        </div>
-    </loading>
-    <!-- Style -->
-    <link rel="stylesheet" href="/static/fonts/Roboto/roboto.css">
-    <link rel="stylesheet" href="/static/fonts/Montserrat/montserrat.css">
-    <link rel="stylesheet" href="/static/fonts/Roboto-Slab/roboto-slab.css">
-    <link rel="stylesheet" href="/static/library/bootstrap-material-design/dist/css/bootstrap-material-design.min.css">
-    <link rel="stylesheet" href="/static/css/wemd-color-scheme.css">
-    <link rel="stylesheet" href="/static/css/main.css?version=0.3.2-48-gc106d2c">
-    <link rel="stylesheet" href="/static/library/animate.css/animate.min.css">
-    <link rel="stylesheet" href="/static/fonts/MDI-WXSS/MDI.css">
-    <link rel="stylesheet" href="/static/fonts/Devicon/devicon.css">
-    <!-- Background -->
-    <div class="mundb-background-container">
-        <img src="">
-    </div>
-    <div id="nav-container" style="margin-bottom:30px;position:sticky;top:0;z-index:899;flex-shrink: 0;flex-grow: 0;">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-
-            
-                <a class="navbar-brand" href="/">
-                    <img src="/static/img/njupt.png" height="30"> NJUPT Online Judge
-                </a>
-
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                                        <li class="nav-item">
-                        <a class="nav-link  active " href="/">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                                                                <li class="nav-item">
-                            <a class="nav-link " href="/problem">Problem</a>
-                        </li>
-                                                                <li class="nav-item">
-                            <a class="nav-link " href="/status">Status</a>
-                        </li>
-                                                                <li class="nav-item">
-                            <a class="nav-link " href="/rank">Rank</a>
-                        </li>
-                                        <li class="nav-item">
-                        <a class="nav-link " href="/contest">Contest</a>
-                    </li>
-                                        <li class="nav-item">
-                        <a class="nav-link " href="/group">Group</a>
-                    </li>
-                                                                                            <li class="nav-item">
-                                <a class="nav-link" href="/jscpc" target="">JSCPC</a>
-                            </li>
-                                                    <li class="nav-item">
-                                <a class="nav-link" href="/babel" target="_blank">BABEL</a>
-                            </li>
-                                                            </ul>
-
-                <ul class="navbar-nav mundb-nav-right">
-                                        <form id="search-box" action="/search" method="get" class="form-inline my-2 my-lg-0 mundb-inline">
-                        <span class="bmd-form-group"><input id="search-key" class="form-control mr-sm-2 atsast-searchBox" name="q" type="search" value="" placeholder="Onmi Search" autocomplete="off" aria-label="search"></span>
-                        <input type="hidden" name="tab" value="problems">
-                    </form>
-                                                            <li class="nav-item mundb-no-shrink />">
-                                                    <a class="nav-link " href="/account">Account</a>
-                                            </li>
-                </ul>
-            </div>
-        </nav>
-            </div>
-
-    
-<link rel="stylesheet" href="/static/fonts/Raleway/raleway.css">
-<style>
-    paper-card {
-        display: block;
-        box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 30px;
-        border-radius: 4px;
-        transition: .2s ease-out .0s;
-        color: #7a8e97;
-        background: #fff;
-        padding: 1rem;
-        position: relative;
-        border: 1px solid rgba(0, 0, 0, 0.15);
-        margin-bottom: 2rem;
-    }
-
-    paper-card:hover {
-        box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 40px;
-    }
-
-    .cm-title-section{
-        font-family: 'Raleway';
-    }
-
-    .cm-oj{
-        border: 1px solid rgba(0, 0, 0, 0.15);
-        border-radius: 4px;
-        margin-bottom: 2rem;
-        padding: 0.5rem 1rem;
-        background: rgb(255, 255, 255);
-    }
-
-    timeline-container{
-        display:block;
-    }
-
-    timeline-item{
-        display: block;
-        padding: 1rem;
-        background: #fff;
-        border: 1px solid rgba(0, 0, 0, 0.15);
-        border-radius: 4px;
-        margin-bottom: 2rem;
-    }
-
-    timeline-item[data-type^="notice"] {
-        border-left: 4px solid #ffc107;
-    }
-
-    timeline-item[data-type^="notice"] > div:first-of-type{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        color: rgba(0, 0, 0, 0.62);
-    }
-
-    timeline-item[data-type^="notice"] > div:last-of-type h5 {
-        font-weight: bold;
-        font-family: 'Roboto Slab';
-        margin-bottom: 1rem;
-    }
-
-    .cm-avatar{
-        width:2.5rem;
-        height:2.5rem;
-        border-radius: 200px;
-    }
-
-    .cm-anno{
-        color:rgba(0,0,0,0.54);
-        margin-bottom: 1.5rem;
-        font-weight: 500;
-    }
-
-    #NOJFocusCarousel{
-        border-radius: 4px;
-        overflow: hidden;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 30px;
-    }
-
-    .carousel-item img{
-        transform: scale(1.01);
-    }
-
-    empty-container{
-        display:block;
-        text-align: center;
-        margin-bottom: 2rem;
-    }
-
-    empty-container i{
-        font-size:5rem;
-        color:rgba(0,0,0,0.42);
-    }
-
-    empty-container p{
-        font-size: 1rem;
-        color:rgba(0,0,0,0.54);
-    }
-
-</style>
-
-<div class="container mundb-standard-container">
-    <div class="row">
-        <div class="col-sm-12 col-lg-8">
-            <div class="cm-title-section">
-                <h1>Welcome to NOJ!</h1>
-                <version-badge class="mb-5">
-                    <inline-div>Version</inline-div><inline-div>0.3.2-48-gc106d2c</inline-div>
-                </version-badge>
-            </div>
-                            <div id="NOJFocusCarousel" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                                                    <li data-target="#NOJFocusCarousel" data-slide-to="0" class=" active "></li>
-                                                    <li data-target="#NOJFocusCarousel" data-slide-to="1" class=""></li>
-                                                    <li data-target="#NOJFocusCarousel" data-slide-to="2" class=""></li>
-                                            </ol>
-                    <div class="carousel-inner">
-                                                    <div class="carousel-item  active ">
-                                <a href="https://acm.njupt.edu.cn/contest/120" target="_blank"><img class="d-block w-100" src="/static/img/carousel/201912monthly.png" alt=""></a>
-                            </div>
-                                                    <div class="carousel-item ">
-                                <a href="https://acm.njupt.edu.cn/problem/NOJ1001" target="_blank"><img class="d-block w-100" src="/static/img/carousel/phpandjs.png" alt=""></a>
-                            </div>
-                                                    <div class="carousel-item ">
-                                <a href="https://acm.njupt.edu.cn/babel" target="_blank"><img class="d-block w-100" src="/static/img/carousel/babel.png" alt=""></a>
-                            </div>
-                                            </div>
-                    <a class="carousel-control-prev" href="#NOJFocusCarousel" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#NOJFocusCarousel" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
-                        <p class="cm-anno mt-5"><i class="MDI power-plug"></i> We have currently support the following Babel Extensions:</p>
-            <div class="row">
-                                <div class="col-12 col-sm-6 col-md-4 col-xl-3">
-                    <a href="/"><img src="/static/img/oj/noj/noj@2x.png" class="cm-oj img-fluid"></a>
-                </div>
-                                <div class="col-12 col-sm-6 col-md-4 col-xl-3">
-                    <a href="https://codeforces.com"><img src="/static/img/oj/codeforces/codeforces@2x.png" class="cm-oj img-fluid"></a>
-                </div>
-                                <div class="col-12 col-sm-6 col-md-4 col-xl-3">
-                    <a href="http://contest-hunter.org:83"><img src="/static/img/oj/contesthunter/contesthunter@2x.png" class="cm-oj img-fluid"></a>
-                </div>
-                                <div class="col-12 col-sm-6 col-md-4 col-xl-3">
-                    <a href="http://poj.org"><img src="/static/img/oj/poj/poj@2x.png" class="cm-oj img-fluid"></a>
-                </div>
-                                <div class="col-12 col-sm-6 col-md-4 col-xl-3">
-                    <a href="https://vijos.org"><img src="/static/img/oj/vijos/vijos@2x.png" class="cm-oj img-fluid"></a>
-                </div>
-                                <div class="col-12 col-sm-6 col-md-4 col-xl-3">
-                    <a href="https://pintia.cn"><img src="/static/img/oj/pta/pta@2x.png" class="cm-oj img-fluid"></a>
-                </div>
-                                <div class="col-12 col-sm-6 col-md-4 col-xl-3">
-                    <a href="https://uva.onlinejudge.org"><img src="/static/img/oj/uva/uva@2x.png" class="cm-oj img-fluid"></a>
-                </div>
-                                <div class="col-12 col-sm-6 col-md-4 col-xl-3">
-                    <a href="http://acm.hdu.edu.cn"><img src="/static/img/oj/hdu/hdu@2x.png" class="cm-oj img-fluid"></a>
-                </div>
-                                <div class="col-12 col-sm-6 col-md-4 col-xl-3">
-                    <a href="https://icpcarchive.ecs.baylor.edu"><img src="/static/img/oj/uvalive/uvalive@2x.png" class="cm-oj img-fluid"></a>
-                </div>
-                                <div class="col-12 col-sm-6 col-md-4 col-xl-3">
-                    <a href="http://acm.zju.edu.cn/"><img src="/static/img/oj/zoj/zoj@2x.png" class="cm-oj img-fluid"></a>
-                </div>
-                                <div class="col-12 col-sm-6 col-md-4 col-xl-3">
-                    <a href="https://atcoder.jp/"><img src="/static/img/oj/atcoder/atcoder@2x.png" class="cm-oj img-fluid"></a>
-                </div>
-                                <div class="col-12 col-sm-6 col-md-4 col-xl-3">
-                    <a href="https://www.lydsy.com/"><img src="/static/img/oj/bzoj/bzoj@2x.png" class="cm-oj img-fluid"></a>
-                </div>
-                            </div>
-        </div>
-        <div class="col-sm-12 col-lg-4">
-            <p class="cm-anno"><i class="MDI newspaper"></i> Announcements</p>
-            <div>
-                                                            <timeline-container>
-                            <timeline-item data-type="notice">
-                                <div>
-                                    <div>admin <span class="wemd-green-text">&rtrif; 3 months ago</span></div>
-                                    <div><img src="/static/img/avatar/noj.png" class="cm-avatar"></div>
-                                </div>
-                                <div>
-                                    <h5>Happy Anniversary!</h5>
-                                    <p><p>It has been extactly one year since we initiate NOJ, thank you for your support!</p>
-</p>
-                                </div>
-                            </timeline-item>
-                        </timeline-container>
-                                            <timeline-container>
-                            <timeline-item data-type="notice">
-                                <div>
-                                    <div>admin <span class="wemd-green-text">&rtrif; 8 months ago</span></div>
-                                    <div><img src="/static/img/avatar/noj.png" class="cm-avatar"></div>
-                                </div>
-                                <div>
-                                    <h5>0.3.1 Citoniensis Released</h5>
-                                    <p><p>We are now updating NOJ and when it comes NOJ would be down for a few minutes. NOJ's problem submission are now also on halt for JudgeServer updating.</p>
-</p>
-                                </div>
-                            </timeline-item>
-                        </timeline-container>
-                                            <timeline-container>
-                            <timeline-item data-type="notice">
-                                <div>
-                                    <div>admin <span class="wemd-green-text">&rtrif; 8 months ago</span></div>
-                                    <div><img src="/static/img/avatar/noj.png" class="cm-avatar"></div>
-                                </div>
-                                <div>
-                                    <h5>HDU Back Online</h5>
-                                    <p><p>NOJ has fixed multiple issues involving HDU and finally we fixed all bugs. HDU is online now.</p>
-</p>
-                                </div>
-                            </timeline-item>
-                        </timeline-container>
-                                            <timeline-container>
-                            <timeline-item data-type="notice">
-                                <div>
-                                    <div>admin <span class="wemd-green-text">&rtrif; 8 months ago</span></div>
-                                    <div><img src="/static/img/avatar/noj.png" class="cm-avatar"></div>
-                                </div>
-                                <div>
-                                    <h5>Stop Accepting HDU </h5>
-                                    <p><p>We are fixing issues regarding HDU problem judging. For a moment HDU would be hanged up. Your waiting submission would still be on queue until they got fixed.</p>
-</p>
-                                </div>
-                            </timeline-item>
-                        </timeline-container>
-                                            <timeline-container>
-                            <timeline-item data-type="notice">
-                                <div>
-                                    <div>admin <span class="wemd-green-text">&rtrif; 8 months ago</span></div>
-                                    <div><img src="/static/img/avatar/noj.png" class="cm-avatar"></div>
-                                </div>
-                                <div>
-                                    <h5>0.3.0 Orca Released</h5>
-                                    <p><p>NOJ has announced it's third major version, named Orca. with tons of new features Orca would be a next milestone.</p>
-</p>
-                                </div>
-                            </timeline-item>
-                        </timeline-container>
-                                            <timeline-container>
-                            <timeline-item data-type="notice">
-                                <div>
-                                    <div>admin <span class="wemd-green-text">&rtrif; 8 months ago</span></div>
-                                    <div><img src="/static/img/avatar/noj.png" class="cm-avatar"></div>
-                                </div>
-                                <div>
-                                    <h5>Official QQ Group</h5>
-                                    <p><p>NOJ has announced it's official QQ group, <strong>668108264</strong>. We welcome all users to participate in and give us your feedback.</p>
-</p>
-                                </div>
-                            </timeline-item>
-                        </timeline-container>
-                                            <timeline-container>
-                            <timeline-item data-type="notice">
-                                <div>
-                                    <div>admin <span class="wemd-green-text">&rtrif; 10 months ago</span></div>
-                                    <div><img src="/static/img/avatar/noj.png" class="cm-avatar"></div>
-                                </div>
-                                <div>
-                                    <h5>Solution&#039;s Online</h5>
-                                    <p><p>We now have solution section for  all problems, welcome to submit your own solutions. NOJ's judger downs again for JSCPC reasons, we estimated the new judger would be online in a week or less.</p>
-</p>
-                                </div>
-                            </timeline-item>
-                        </timeline-container>
-                                                </div>
-        </div>
-    </div>
-</div>
-<script>
-    window.addEventListener("load",function() {
-        notify("Welcome",'Hi, welcome back to the Fully new NOJ',"/static/img/notify/njupt.png",'welcome');
-    }, false);
-</script>
-
-    
-    <footer class="d-print-none bg-dark center-on-small-only" style="flex-shrink: 0;flex-grow: 0">
-        <div class="mundb-footer text-light">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-md-4">
-                        <h5 class="cm-footer-title mb-4 mt-3 font-bold">NOJ</h5>
-                        <p>NOJ is an online judge developed by ICPC Team of Nanjing Universify of Posts and Telecommunications.</p>
-                    </div>
-
-                    <hr class="clearfix w-100 d-md-none">
-
-                    <div class="col-md-2 mx-auto">
-                        <h5 class="title mb-4 mt-3 font-bold">Services</h5>
-                        <p class="mb-1"><a href="/status">Judging Queue</a></p>
-                        <p class="mb-1"><a href="/system/info">System Info</a></p>
-                        <p class="mb-1"><a href="/tool/pastebin/create">PasteBin</a></p>
-                    </div>
-
-                    <hr class="clearfix w-100 d-md-none">
-
-                    <div class="col-md-2 mx-auto">
-                        <h5 class="title mb-4 mt-3 font-bold">Developments</h5>
-                        <p class="mb-1"><a href="https://github.com/ZsgsDesign/NOJ">Open Source</a></p>
-                        <p class="mb-1"><a href="#">API</a></p>
-                    </div>
-
-                    <hr class="clearfix w-100 d-md-none">
-
-                    <div class="col-md-2 mx-auto">
-                        <h5 class="title mb-4 mt-3 font-bold ">Support</h5>
-                        <p class="mb-0"><i class="MDI email"></i> acm@njupt.edu.cn</p>
-                        <p class="mb-0"><i class="MDI qqchat"></i> Group 668108264</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="mundb-footer mundb-copyright">&copy; 2018-2020, NOJ. <a href="https://github.com/ZsgsDesign/NOJ" target="_blank"><i class="MDI github-circle"></i></a></div>
-    </footer>
-    <script src="/static/library/jquery/dist/jquery.min.js"></script>
-    <script src="/static/library/popper.js/dist/umd/popper.min.js"></script>
-    <script src="/static/library/bootstrap-material-design/dist/js/bootstrap-material-design.min.js"></script>
-    <script>
-    window.addEventListener("load",function() {
-        $("body").append(`
-            <!-- Global site tag (gtag.js) - Google Analytics -->
-            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-52979913-2"><\/script>
-            <script>
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-
-                gtag('config', 'UA-52979913-2');
-            <\/script>
-        `);
-    });
-</script>
-
-<script>
-function notify(title,body,icon="/static/img/njupt.png",tag="default"){
-    if (window.Notification) {
-        showMess(title,body,icon,tag);
-    } else {
-        console.log("Doesn't Support Web Notifications API");
-    }
-}
-
-function showMess(title,body,icon,tag){
-    if(window.Notification && Notification.permission !== "denied") {
-        Notification.requestPermission(function(status) {
-            if (status === "granted") {
-                var m = new Notification(title, {
-                    body: body,
-                    tag: tag,
-                    icon: icon
-                });
-                m.onclick = function () {
-                    window.focus();
-                }
-            } else{
-                console.log("Doesn't Support Web Notification Entity");
-            }
-        });
-    }
-}
-</script>
-<script>
-    $(document).ready(function () { $('body').bootstrapMaterialDesign();$('[data-toggle="tooltip"]').tooltip(); });
-    window.addEventListener("load",function() {
-
-        $('loading').css({"opacity":"0","pointer-events":"none"});
-
-        // Console Text
-
-        var consoleSVG = "data:image/svg+xml,<svg version='1.1' id='Ebene_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='600px' height='100px' viewBox='0 0 600 100'> <style type='text/css'> <![CDATA[ text %7B filter: url(%23filter); fill: black; font-family: 'Share Tech Mono', consolas, sans-serif; font-size: 100px; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; %7D ]]> </style> <defs> <filter id='filter'> <feFlood flood-color='white' result='black' /> <feFlood flood-color='red' result='flood1' /> <feFlood flood-color='limegreen' result='flood2' /> <feOffset in='SourceGraphic' dx='3' dy='0' result='off1a'/> <feOffset in='SourceGraphic' dx='2' dy='0' result='off1b'/> <feOffset in='SourceGraphic' dx='-3' dy='0' result='off2a'/> <feOffset in='SourceGraphic' dx='-2' dy='0' result='off2b'/> <feComposite in='flood1' in2='off1a' operator='in' result='comp1' /> <feComposite in='flood2' in2='off2a' operator='in' result='comp2' /> <feMerge x='0' width='100%25' result='merge1'> <feMergeNode in = 'black' /> <feMergeNode in = 'comp1' /> <feMergeNode in = 'off1b' /> <animate attributeName='y' id = 'y' dur ='4s' values = '104px; 104px; 30px; 105px; 30px; 2px; 2px; 50px; 40px; 105px; 105px; 20px; 6%C3%9Fpx; 40px; 104px; 40px; 70px; 10px; 30px; 104px; 102px' keyTimes = '0; 0.362; 0.368; 0.421; 0.440; 0.477; 0.518; 0.564; 0.593; 0.613; 0.644; 0.693; 0.721; 0.736; 0.772; 0.818; 0.844; 0.894; 0.925; 0.939; 1' repeatCount = 'indefinite' /> <animate attributeName='height' id = 'h' dur ='4s' values = '10px; 0px; 10px; 30px; 50px; 0px; 10px; 0px; 0px; 0px; 10px; 50px; 40px; 0px; 0px; 0px; 40px; 30px; 10px; 0px; 50px' keyTimes = '0; 0.362; 0.368; 0.421; 0.440; 0.477; 0.518; 0.564; 0.593; 0.613; 0.644; 0.693; 0.721; 0.736; 0.772; 0.818; 0.844; 0.894; 0.925; 0.939; 1' repeatCount = 'indefinite' /> </feMerge> <feMerge x='0' width='100%25' y='60px' height='65px' result='merge2'> <feMergeNode in = 'black' /> <feMergeNode in = 'comp2' /> <feMergeNode in = 'off2b' /> <animate attributeName='y' id = 'y' dur ='4s' values = '103px; 104px; 69px; 53px; 42px; 104px; 78px; 89px; 96px; 100px; 67px; 50px; 96px; 66px; 88px; 42px; 13px; 100px; 100px; 104px;' keyTimes = '0; 0.055; 0.100; 0.125; 0.159; 0.182; 0.202; 0.236; 0.268; 0.326; 0.357; 0.400; 0.408; 0.461; 0.493; 0.513; 0.548; 0.577; 0.613; 1' repeatCount = 'indefinite' /> <animate attributeName='height' id = 'h' dur = '4s' values = '0px; 0px; 0px; 16px; 16px; 12px; 12px; 0px; 0px; 5px; 10px; 22px; 33px; 11px; 0px; 0px; 10px' keyTimes = '0; 0.055; 0.100; 0.125; 0.159; 0.182; 0.202; 0.236; 0.268; 0.326; 0.357; 0.400; 0.408; 0.461; 0.493; 0.513; 1' repeatCount = 'indefinite' /> </feMerge> <feMerge> <feMergeNode in='SourceGraphic' /> <feMergeNode in='merge1' /> <feMergeNode in='merge2' /> </feMerge> </filter> </defs> <g> <text x='0' y='100'>NOJ</text> </g> </svg>";
-        var consoleCSS = "background: url(\"" + consoleSVG + "\") left top no-repeat; font-size: 100px;line-height:140px;";
-        console.log('%c   ', consoleCSS);
-        console.info("\nNOJ - Nanjing University of Posts and Telecommunications Online Judge\n\nNOJ Development Team Leader: John Zhang\nOrganization: Association of Advanced Algorithms of NJUPT\nDevelopers: John Zhang, David Diao and other dedicated contributor of the open-source community\nVersion: 0.3.2-48-gc106d2c\nInsider Alias: CodeMaster\n\n");
-
-        $('.modal').on('shown.bs.modal', function (e) {
-            changeDepth();
-        });
-
-        if($('#nav-username').length != 0){
-            var uid = $('#nav-username').attr('data-uid');
-            $.ajax({
-                type: 'POST',
-                url: '/ajax/message/unread',
-                data: {
-                    uid: uid
-                },
-                dataType: 'json',
-                headers: {
-                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                }, success: function(result){
-                    if(result.ret == '200' && result.data.length != 0){
-                        $("#message-tip").attr('title',`You have ${result.data.length} new messages.`)
-                        $("#message-tip").tooltip('dispose');
-                        $("#message-tip").tooltip();
-                        window['message_tip'] = setInterval(() => {
-                            $("#message-tip").animate({
-                                opacity: !parseInt($('#message-tip').css('opacity'))
-                            },200)
-                        }, 400);
-                    }else{
-                        $("#message-tip").attr('title',`You have no messages.`);
-                        $("#message-tip").tooltip('dispose');
-                        $("#message-tip").tooltip();
-                    }
-                    console.log(result);
-                }, error: function(xhr, type){
-                    console.log('Ajax error!');
-                    ajaxing=false;
-                }
-            });
-        }
-
-    }, false);
-
-    function changeDepth(){
-        var interv=0;
-        $(".modal-backdrop").each(function(){
-            $(this).css("z-index",1040+interv);
-            interv+=100;
-        });
-        interv=0;
-        $(".modal.show").each(function(){
-            $(this).css("z-index",1050+interv);
-            interv+=100;
-        });
-    }
-
-    function alert(content, title = "Notice", icon = "information-outline", backdrop = "static"){
-        var id = new Date().getTime();
-        if(backdrop !== "static") backdrop = backdrop?"true":"false";
-        $('body').append(`
-            <div class="modal fade" id="notice${id}" data-backdrop="${backdrop}" tabindex="-1" role="dialog">
-                <div class="modal-dialog modal-dialog-centered modal-dialog-alert" role="document">
-                    <div class="modal-content sm-modal">
-                        <div class="modal-header">
-                            <h5 class="modal-title"><i class="MDI ${icon}"></i> ${title}</h5>
-                        </div>
-                        <div class="modal-body">
-                            ${content}
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        `);
-        $(`#notice${id}`).on('shown.bs.modal', function (e) {
-            changeDepth();
-        });
-        $(`#notice${id}`).modal('toggle');
-    }
-
-    function confirm ({content="",title="Confirm",icon="information-outline",backdrop="static",noText="Cancel",yesText="OK"}={},callback=function(deny){}){
-        var id = new Date().getTime();
-        if(backdrop !== "static") backdrop = backdrop?"true":"false";
-        $('body').append(`
-            <div class="modal fade" id="notice${id}" data-backdrop="${backdrop}" tabindex="-1" role="dialog">
-                <div class="modal-dialog modal-dialog-centered modal-dialog-alert" role="document">
-                    <div class="modal-content sm-modal">
-                        <div class="modal-header">
-                            <h5 class="modal-title"><i class="MDI ${icon}"></i> ${title}</h5>
-                        </div>
-                        <div class="modal-body">
-                            ${content}
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" id="confirmDeny${id}" class="btn btn-secondary" data-dismiss="modal">${noText}</button>
-                            <button type="button" id="confirmDone${id}" class="btn btn-primary" data-dismiss="modal">${yesText}</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        `);
-        $(`#confirmDone${id}`).on('click',function(){
-            callback(false);
-        });
-        $(`#confirmDeny${id}`).on('click',function(){
-            callback(true);
-        });
-        $(`#notice${id}`).on('shown.bs.modal', function (e) {
-            changeDepth();
-        });
-        $(`#notice${id}`).modal('toggle');
-    }
-
-    function prompt ({content="",title="Prompt",placeholder="Input Field",value,icon="information-outline",backdrop="static"}={},callback=function(deny,text){}){
-        var id = new Date().getTime();
-        if(backdrop !== "static") backdrop = backdrop?"true":"false";
-        // placeholder = placeholder!==undefined ? ` placeholder=${placeholder} `:"";
-        // value = value!==undefined ? ` value=${value} `:"";
-        $('body').append(`
-            <div class="modal fade" id="notice${id}" data-backdrop="${backdrop}" tabindex="-1" role="dialog">
-                <div class="modal-dialog modal-dialog-centered modal-dialog-alert" role="document">
-                    <div class="modal-content sm-modal">
-                        <div class="modal-header">
-                            <h5 class="modal-title"><i class="MDI ${icon}"></i> ${title}</h5>
-                        </div>
-                        <div class="modal-body">
-                            ${content}
-                            <div class="form-group bmd-form-group">
-                                <label for="noticeInput${id}" class="bmd-label-floating">${placeholder}</label>
-                                <input id="noticeInput${id}" type="text" class="form-control" autocomplete="off">
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" id="promptDeny${id}" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                            <button type="button" id="promptDone${id}" class="btn btn-primary" data-dismiss="modal">OK</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        `);
-        $(`#noticeInput${id}`).attr("value",value);
-        $(`#notice${id}`).bootstrapMaterialDesign();
-        $(`#promptDeny${id}`).on('click',function(){
-            callback(true,$(`#noticeInput${id}`)[0].value);
-        });
-        $(`#promptDone${id}`).on('click',function(){
-            callback(false,$(`#noticeInput${id}`)[0].value);
-        });
-        $(`#notice${id}`).on('shown.bs.modal', function (e) {
-            changeDepth();
-        });
-        $(`#notice${id}`).modal('toggle');
-    }
-
-    function changeText({selector="",text="",css={},fadeOutTime=100,fadeInTime=200} = {},callback=function(){}){
-        $(selector).animate({opacity : 0},100,function(){
-            css['opacity'] = 1;
-            $(selector).text(text);
-            $(selector).animate(css,200,function(){
-                callback();
-            });
-        })
-    }
-
-    function empty(test){
-        return test.match(/^\s*$/);
-    }
-
-    function setCookie(c_name,value,expiredays)
-    {
-        var exdate=new Date();
-        exdate.setDate(exdate.getDate()+expiredays);
-        document.cookie=c_name+ "=" +escape(value)+((expiredays==null) ? "" : ";expires="+exdate.toGMTString()) + ";domain=acm.njupt.edu.cn";
-    }
-
-    function delay(ms){
-        return new Promise(resolve => setTimeout(resolve, ms));
-    }
-</script>
-    </body>
-
+<body>
+	<form action="j_spring_security_check" method="post" onsubmit="return doLogin()">
+		<input type="hidden" name="client_id" value="" />
+		<input type="hidden" name="redirect" value="" />
+		<div class="topbtnbg">
+			<div class="topbtn">
+		    	<ul class="btn_left">
+			        <div class="wel">你好，欢迎来到简至教育云</div>
+			        <li class="pli home"><a href="/zhxy/login.jsp">首页</a></li>
+			        <li class="sli">|</li>
+			        <li class="pli"><a href="javascript:void(0)" onclick="setHomepage('https://www.jzjyy.cn');return false;">设为主页</a></li>
+			        <li class="sli">|</li>
+			        <li class="pli"><a href="javascript:void(0)" onclick="addFavorite(location.href, document.title);return false;" >加入收藏</a></li>
+		        </ul>
+		        <ul class="btn_right">
+		            <div class="login" >
+		                <nav id="username"></nav>
+		                <p><a href="https://www.jzjyy.cn/zhxy">用户中心</a></p>
+				        
+				        
+				        	<p class="last_p"><a href="https://www.jzjyy.cn/zhxy/j_spring_security_logout">退出登录</a></p>
+				       	
+		            </div>
+			        <li class="pli hide login_li" ><a href="/zhxy/login.jsp">登录</a></li>
+			        <li class="sli hide" >|</li>
+			        <li class="pli hide" ><a href="/zhxy/system/userinfo/register">注册</a></li>
+			        <li class="sli">|</li>
+			        <li class="pli" id="pho"><a href="#">手机客户端</a><div class="kehuduan1" id="kehuduan">
+			           	<img src="/zhxy/resources/images/basetheme/login_new/erweima.png" class="er" alt="客户端二维码" />
+			            <div class="android"><a href="https://www.jzjyy.cn/static/apk/common/zhxy.apk"><div class="icon_android"></div><div class="i">Android</div></a></div>
+			            <div class="ios"><a href="https://itunes.apple.com/cn/app/jian-zhi-ren-ren-tong/id1177384761?mt=8"><div class="icon_ios"></div><div class="i">iOS</div></a></div>
+			            <b></b>
+			        </li>
+			        <div class="tel">客服热线：400-928-9898</div>
+			        <div class="lastdiv"></div>
+		        </ul>
+		        <div class="lastdiv"></div>
+		    </div>
+		</div>
+		<!--顶部LOGO及顶部导航-->
+		<div class="toplogo">
+			<a class="logo" href="login.jsp"><img src="/zhxy/resources/images/basetheme/login_new/logo.png"/></a>
+		    
+		    <ul class="topnav">
+			    <a class="pnav" href="login.jsp"><li class="li_c">首页</li></a>
+			    <a class="pnav" href="mobile.jsp"><li>手机版</li></a>
+			    <a class="pnav" href="product_scheme.jsp"><li>产品方案</li></a>
+			    <a class="pnav" href="jianzhi_news/jianzhi_news.jsp"><li>新闻动态</li></a>
+			    <a class="pnav" href="https://www.jzjyy.cn/zhxy-cloudshare-web" target="_blank"><li>资源中心</li></a>
+			    <a class="pnav" href="about_1.jsp"><li>关于教育云</li></a>
+		    </ul>
+		</div>
+		<script>
+			$(".topnav li").click(function(){
+				$(".topnav li").not(this).removeClass("li_c");
+				$(this).removeClass("li_hover");
+				$(this).addClass("li_c");
+				})
+			$(".topnav li").mouseenter(function(){
+				if(this.className=="li_c"){
+					return;	
+					}else{
+				$(this).addClass("li_hover");
+						}
+				}).mouseleave(function(){
+					$(this).removeClass("li_hover");
+				})
+		</script>
+		<div style="position: absolute;z-index: 200;width:1000px;left:50%;margin-left:-500px;">
+			<div class="login-wrap" style="margin-top: 42px;" id="loginDiv">
+		      	<h3><span class="regist"><a href="/zhxy/system/userinfo/register">免费注册</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/zhxy/userActivation/initchoose">用户激活</a><br/>
+		      	</span>用户登录</h3>
+		      	<div class="errormsg">
+	   				
+	   			</div>
+		      	<div class="login-inp"><input type="text" class="inp_name" id="j_username" name="j_username" value="" placeholder="用户名/手机号码" onfocus="this.select()" autocomplete="off" /></div>
+		      	<div class="login-inp"><input type="password" class="inp_pasw" id="pwd_input" name="pwd_input" value="" placeholder="请输入密码" onfocus="this.select()" autocomplete="off" /><input type='hidden' id="j_password" name='j_password' /></div>
+		      	<div class="login-inp" id="log_random" style="display: none;"><input type="text" class="inp_code" id="j_random" name="j_random" value="" placeholder="请输入验证码" maxlength="4" autocomplete="off" /><img id="captcha" name="captcha" onclick="changeCaptcha();" width="88" height="36" title="看不清?点击换一个" alt="看不清?点击换一个" style="cursor: pointer;" /></div>
+		      	<div class="login-remb"><span class="wjmm"><a href="/zhxy/system/userinfo/retrievePassword/step1" title="点击找回密码">忘记密码?</a></span>
+		      	<label><input type="checkbox" id="remType" name="remType" value="1" checked="checked"/> 自动登录</label></div>
+		      	<div class="login-btn"><input type="submit" id="btn_submit" name="btn_submit" value="登&nbsp;&nbsp;录" class="btnstyle"/></div>
+		      	<div class="third_login">
+					
+				</div>
+		    </div>
+		    
+		</div>
+		<!--焦点图-->
+		<div id="containerIndex">
+			<div class="banner-box">
+		    	<div class="switch">
+		        	<span id="switch1" class="current" ></span>
+		        	<span id="switch2" class=""></span>
+		        </div>
+		        <div id="banner_wrap1" class="banner-grid" style="display: block;"></div>
+		        <div id="banner_wrap2" class="banner-grid" style="display: none;"></div>
+		    </div>
+		</div>
+		<!--新闻动态-->
+		<div class="news_bg">
+			<div class="news_box">
+		    	<ul>
+		        <nav>新闻动态</nav>
+		        <a href="jianzhi_news/jianzhi_news_c4.jsp"><li>●  一款好用的学生评价系统 让学生积分...</li></a>
+		        <a href="jianzhi_news/jianzhi_news_c3.jsp"><li>●  简至教育云亮相“2017年中国国际信息...</li></a>
+		        <a class="more" href="jianzhi_news/jianzhi_news.jsp">查看更多>></a>
+		        </ul>
+		    </div>
+		</div>
+		<!--关于教育云-->
+		<div class="home_biaoti">
+			<div class="line"></div>
+		    <p>关于教育云<span> ABOUT</span></p>
+		</div>
+		<div class="home_about">
+			<div class="introduce">简至教育云是利用云计算、大数据和物联网等先进技术，采用轻载化终端+网络化操作+虚拟化资源集中搭建、多渠道部署等模式，构建的集教务教学管理、教学模式创新、校园数字办公、教育资源共享、教师研修培训、网络学习社区为一体的新型智能化教育产品。</div>
+		    <ul>
+		        <li>
+		            <div class="box box1">
+		                <p>多端兼容的web平台</p>
+		            </div>
+		        </li>
+		        <li>
+		            <div class="box box2">
+		                <p>轻便高效的手机客户端</p>
+		            </div>
+		        </li>
+		        <li>
+		            <div class="box box3">
+		                <p>准确稳定的消息系统</p>
+		            </div>
+		        </li>
+		        <li>
+		            <div class="box box4">
+		                <p>简洁卓越的微信平台</p>
+		            </div>
+		        </li>
+		        <div class="lastdiv"></div>
+		    </ul>
+		    <div class="tongji">已有 <span>3365</span> 所学校启用， <span>258000</span> 余名教师用户参与，为 <span>256</span> 万学生&家长提供教育服务</div>
+		</div>
+		<!--产品方案-->
+		<div class="home_product">
+		    <div class="home_biaoti home_biaoti_chanpin">
+		        <div class="line"></div>
+		        <p>产品方案<span> PRODUCTS</span></p>
+		    </div>
+		    <ul>
+		    	<li class="li_1">
+		        	<a href="product_scheme.jsp#zhihuijiaoxue">
+		        	<div class="box">
+		            	<div class="content">
+		                	<nav>智慧教学</nav>
+		                    <p>云平台智慧教学系统，</p>
+		                    <p>辅助教师教学精准化，</p>
+		                    <p>学生学习个性化，</p>
+		                    <p>教我所需，学我所需</p>
+		                </div>
+		                <div class="img">
+		                </div>
+		            </div>
+		            </a>
+		        </li>
+		        <li class="li_2">
+		        	<a href="product_scheme.jsp#zaixianbangong">
+		        	<div class="box">
+		        		<div class="img"></div>
+		            	<div class="content">
+		                	<nav>在线办公</nav>
+		                    <p>垂直于教育K12行业，</p>
+		                    <p>量身定制的在线办公系统，</p>
+		                    <p>加强信息流转，</p>
+		                    <p>形成低碳办公环境</p>
+		                </div>
+		            </div>
+		            </a>
+		        </li>
+		        <li class="li_3">
+		        	<a href="product_scheme.jsp#jiaxiaohudong">
+		        	<div class="box">
+		        		<div class="img"></div>
+		            	<div class="content">
+		                	<nav>家校互动</nav>
+		                    <p>互联网模式的家校互动，</p>
+		                    <p>传统交流基础上更添群聊、</p>
+		                    <p>图文新渠道，更快捷更准确.</p>
+		                </div>
+		            </div>
+		            </a>
+		        </li>
+		        <li class="li_4">
+		        	<a href="product_scheme.jsp#jiaoxueziyuan">
+		        	<div class="box">
+		        		<div class="img"></div>
+		            	<div class="content">
+		                	<nav>教学资源</nav>
+		                    <p>整合优质的教育资源，</p>
+		                    <p>提供教师&学生个人学习空间， </p>
+		                    <p>构建网络教学平台</p>
+		                </div>
+		            </div>
+		            </a>
+		        </li>
+		        <li class="li_5">
+		        	<a href="product_scheme.jsp#xiaoyuananquan">
+		        	<div class="box">
+		            	<div class="content">
+		                	<nav>校园安全</nav>
+		                    <p>校园监控网络化，特定账号应用</p>
+		                    <p>终端均可调阅教室视频视频信息，</p>
+		                    <p>杜绝校园安全隐患。</p>
+		                </div>
+		                <div class="img"></div>
+		            </div>
+		            </a>
+		        </li>
+		    </ul>
+		</div>
+		<!--合作共赢-->
+		<div class="home_biaoti">
+			<div class="line"></div>
+		    <p>合作共赢<span> PARTERNERS</span></p>
+		</div>
+		<div class="home_hezuo">
+		    <div class="hezuo_pm">
+		        <ul class="hezuo_hk">
+		            <li>
+		                
+		                <div style="background-image: url('/zhxy/resources/images/basetheme/login_new/bg.png');background-position:-330px -858px;width:100px;height:100px;margin-top:20px;margin-left:79px;"></div>
+		                <p>镇江外国语学校</p>
+		            </li>
+		            <li>
+		                
+		                <div style="background-image: url('/zhxy/resources/images/basetheme/login_new/bg.png');background-position:-452px -858px;width:100px;height:100px;margin-top:20px;margin-left:79px;"></div>
+		                <p>盐城建湖初级中学</p>
+		            </li>
+		            <li>
+		                
+		                <div style="background-image: url('/zhxy/resources/images/basetheme/login_new/bg.png');background-position:-583px -858px;width:100px;height:100px;margin-top:20px;margin-left:79px;"></div>
+		                <p>睢宁汇文中学</p>
+		            </li>
+		            <li>
+		                
+		                <div style="background-image: url('/zhxy/resources/images/basetheme/login_new/bg.png');background-position:-713px -858px;width:100px;height:100px;margin-top:20px;margin-left:79px;"></div>
+		                <p>连云港新海实验中学</p>
+		            </li>
+		            
+		            <li>
+		                
+		                <div style="background-image: url('/zhxy/resources/images/basetheme/login_new/bg.png');background-position:-203px -709px;width:100px;height:100px;margin-top:20px;margin-left:79px;"></div>
+		                <p>南京大学附属中学</p>
+		            </li>
+		            <li>
+		                <img src="/zhxy/resources/images/basetheme/login_new/home_hezuo2.png"/>
+		                
+		                <p>无锡市外国语学校</p>
+		            </li>
+		            <li>
+		                
+		                <div style="background-image: url('/zhxy/resources/images/basetheme/login_new/bg.png');background-position:-70px -709px;width:100px;height:100px;margin-top:20px;margin-left:79px;"></div>
+		                <p>常州市丽华中学</p>
+		            </li>
+		            <li>
+		                
+		                <div style="background-image: url('/zhxy/resources/images/basetheme/login_new/bg.png');background-position:-460px -709px;width:100px;height:100px;margin-top:20px;margin-left:79px;"></div>
+		                <p>扬州大学附中东校</p>
+		            </li>
+		            <li>
+		                
+		                <div style="background-image: url('/zhxy/resources/images/basetheme/login_new/bg.png');background-position:-590px -709px;width:100px;height:100px;margin-top:20px;margin-left:79px;"></div>
+		                <p>泰州口岸实验学校</p>
+		            </li>
+		            <li>
+		                
+		                <div style="background-image: url('/zhxy/resources/images/basetheme/login_new/bg.png');background-position:-718px -709px;width:100px;height:100px;margin-top:20px;margin-left:79px;"></div>
+		                <p>无锡天一中学</p>
+		            </li>
+		            <li>
+		                
+		                <div style="background-image: url('/zhxy/resources/images/basetheme/login_new/bg.png');background-position:-66px -858px;width:100px;height:100px;margin-top:20px;margin-left:79px;"></div>
+		                <p>常州市实验初级中学</p>
+		            </li>
+		            <li>
+		                
+		                <div style="background-image: url('/zhxy/resources/images/basetheme/login_new/bg.png');background-position:-193px -858px;width:100px;height:100px;margin-top:20px;margin-left:79px;"></div>
+		                <p>苏州蓬朗前景学校</p>
+		            </li>
+		            
+		            <li>
+		                
+		                <div style="background-image: url('/zhxy/resources/images/basetheme/login_new/bg.png');background-position:-330px -858px;width:100px;height:100px;margin-top:20px;margin-left:79px;"></div>
+		                <p>镇江外国语学校</p>
+		            </li>
+		            <li>
+		                
+		                <div style="background-image: url('/zhxy/resources/images/basetheme/login_new/bg.png');background-position:-452px -858px;width:100px;height:100px;margin-top:20px;margin-left:79px;"></div>
+		                <p>盐城建湖初级中学</p>
+		            </li>
+		            <li>
+		                
+		                <div style="background-image: url('/zhxy/resources/images/basetheme/login_new/bg.png');background-position:-583px -858px;width:100px;height:100px;margin-top:20px;margin-left:79px;"></div>
+		                <p>睢宁汇文中学</p>
+		            </li>
+		            <li>
+		                
+		                <div style="background-image: url('/zhxy/resources/images/basetheme/login_new/bg.png');background-position:-713px -858px;width:100px;height:100px;margin-top:20px;margin-left:79px;"></div>
+		                <p>连云港新海实验中学</p>
+		            </li>
+		        </ul>
+		    </div>
+		    <ul class="point"><li class="li_hover"></li><li></li><li></li></ul>
+		</div>
+		<script type="text/javascript">
+			var n=1;
+			/*播放函数*/
+			function runLeft(){
+				if(n<3){
+					n=n+1;
+				}else{
+					$(".hezuo_hk").css({marginLeft:0});
+					n=1;
+				}
+				$(".hezuo_hk").stop().animate({marginLeft:(-960*n)},3000);
+				$(".point li").removeClass("li_hover");
+				$(".point li").eq(n-1).addClass("li_hover");
+			}
+			var timer=setInterval(runLeft,5000);
+			/*按钮控制*/
+			$(".point li").hover(function(){
+				clearInterval(timer);
+				n = $(".point li").index(this)+1;
+				$(".hezuo_hk").stop().animate({marginLeft:(-960*n)},3000);
+				$(".point li").removeClass("li_hover");
+				$(this).addClass("li_hover");
+			},function(){
+				timer=setInterval(runLeft,5000);	
+			});
+			$(".hezuo_hk li").mouseenter(function(){
+				clearInterval(timer);
+				}).mouseleave(function(){
+				timer=setInterval(runLeft,5000);
+			});
+		</script>
+		<!--联系我们-->
+		<div class="home_biaoti">
+			<div class="line"></div>
+		    <p>联系我们<span> CONTACT</span></p>
+		</div>
+		<ul class="home_contact">
+			<li>
+		    	<div class="content">
+		    		<div class="content1">
+		    		</div>
+		        	<div class="content_title">合作邮箱</div>
+		            <p>邮箱：cooperation@gaotai.cn</p>
+		        </div>
+		    </li>
+		    <li>
+		    	
+		        <div class="content content2">
+		        	<nav>客服QQ</nav>
+		            <p>1993280624</p>
+		        </div>
+		    </li>
+		    <li>
+		    	<div class="content">
+		    		<div class="content3">
+		    		</div>
+		        	<div class="content_title">客服热线</div>
+		            <p>400-928-9898</p>
+		        </div>
+		    </li>
+		</ul>
+		<!--版本-->
+		<div class="home_copyright">
+			<ul>
+		    	<a href="/zhxy/about_2.jsp"><li class="pli">联系我们</li></a>
+		        <li class="sli">|</li>
+		        <a href="/zhxy/about_1.jsp"><li class="pli">关于我们</li></a>
+		        <li class="sli">|</li>
+		        <div onclick="window.open('/zhxy/solutions/registerAgreement.jsp');" style="cursor: pointer;"><li class="pli" >注册协议</li></div>
+		        <li class="sli">|</li>
+		        <a href="http://help.sch.jzjyy.cn/default.aspx?mcode=02&Columnid=6621" target="_blank" class="interval_right_11 interval_left_7"><li class="pli">帮助中心</li></a>
+		    </ul>
+		    <p>Copyright © 2020 <a href="http://www.gaotai.cn/" target="_blank" class="whitebold">All Rights Reserved.</a> 版权所有 <a href="http://beian.miit.gov.cn/publish/query/indexFirst.action" target="_blank" class="whitebold">苏ICP备12081046号</a> </p>
+		</div>
+		<!--右侧漂浮按钮-->
+		<ul class="float_btn">
+			
+		    <li class="li_1"><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=1993280624&site=oicqzone.com&menu=yes" title="点击这里给我们发消息" alt="点击这里给我们发消息"><p>在线<br>客服</p></a></li>
+		    <li class="li_2"><p>下载<br>客户端</p><div class="box"><div class="erweima"></div><div class="sanjiao1"></div><div class="sanjiao2"></div></div></li>
+		    <li class="li_3"><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=1993280624&site=oicqzone.com&menu=yes" title="点击这里给我们发消息" alt="点击这里给我们发消息"><p>申请<br>试用</p></a></li>
+		    <li class="li_4"><p>回到<br>顶部</p></li>
+		</ul>
+		<script type="text/javascript">
+			//鼠标滚轮回到顶部
+			$(window).scroll(function (){
+				if($(window).scrollTop()>500){
+					$(".float_btn .li_4").fadeIn();
+				}else{
+					$(".float_btn .li_4").fadeOut();	
+				}
+			});
+			$(".float_btn .li_4").click(function(){
+				window.scrollTo(0,0);
+			});
+		</script>
+	</form>
+	<script type="text/javascript" src="/zhxy/resources/js/md5.js"></script>
+	<script type="text/javascript" src="/zhxy/resources/js/gaotai.js"></script>
+	<script type="text/javascript" src="/zhxy/resources/js/login/myscript.js"></script>
+	<script type="text/javascript" src="https://www.jzjyy.cn/static/zhxyFile/public/js/js.cookie.js"></script>
+	
+	<script type="text/javascript">
+		function doLogin()
+	    {
+			var form = document.forms[0];
+			form.j_username.value = $.trim(form.j_username.value);
+	    	var usename = form.j_username;
+			var p1 = form.pwd_input;
+			if(isNullString(p1.value) || isNullString(usename.value)){
+				$(".errormsg").text("请输入用户名、密码！");
+				if(isNullString(usename.value)){
+					form.j_username.focus();
+				} else if(isNullString(p1.value)){
+					form.pwd_input.focus();
+				}
+				return false;
+		 	}
+			if(usename.value=="null"){
+				$(".errormsg").text("此用户不存在！");
+				return false;
+			}
+			if($("#log_random").css("display") !="none")
+			{
+				if(form.j_random && isNullString(form.j_random.value)){
+				$(".errormsg").text("请输入验证码！");
+				form.j_random.focus();
+				return false;
+				}
+			}
+			
+	        var p2 = form.j_password;
+	        if(p1.value != p2.value){
+	        	p2.value = b64_md5(p1.value)+"==";
+	        	p1.value = p2.value;
+	        }
+			writeCookies();
+			
+			$("#btn_submit").val("登录中...").attr("disabled","disabled");
+	     }
+	     
+	     function writeCookies() {
+	        var form = document.forms[0];
+	        if (form.remType.checked) {
+	        	setCookie("userName_zhxy", form.j_username.value);
+	        	setCookie("passWord_zhxy", form.j_password.value, 7 * 24);
+	        	setCookie("autoFlag_zhxy", "1");//勾选自动登录
+	        } else {
+	        	setCookie("userName_zhxy", form.j_username.value);
+	        	setCookie("autoFlag_zhxy", "0");
+	        	deleteCookie("passWord_zhxy");//未勾选自动登录
+	        }
+	    }
+	 	
+	    function changeCaptcha(){
+	    	if($("#captcha")){
+	    		$("#captcha").attr("src", '/zhxy/util/kaptcha/gen?p='+ new Date().getTime());
+	    	}
+ 	 	}
+	    
+		$().ready(function(){
+			//异步请求，根据结果判断是否已经登录，并且获得登录用户名称，如果已经登录，不获取cookies
+			
+				$(".btn_right .hide").show();
+ 	     		$(".btn_right .login").hide();
+ 	     		$("#loginDiv").show();
+ 	     		//获取错误次数，清除cookie里密码
+ 	     		var errorNum_session="null"; 
+				if(!WisEmpty(errorNum_session)){
+					if(parseInt(errorNum_session) >= 1)
+					{
+						deleteCookie("passWord_zhxy");
+					}
+				}
+		     
+		     	//获取验证码标识，是否显示验证码
+		     	var showFlag ="null"; 
+				if(!WisEmpty(showFlag)){
+					if(showFlag == '1')
+					{
+						$("#log_random").css('display', 'block');
+					}
+				}
+				getLoginCookie();	
+			
+			
+			//getLoginCookie();	      
+			changeCaptcha();
+			
+			$("#pho").mousemove(function(){$("#kehuduan").show();}).mouseout(function(){$("#kehuduan").hide();});
+			$("#kehuduan").mousemove(function(){$("#kehuduan").show();}).mouseout(function(){$("#kehuduan").hide();});
+			
+			Cookies.set('originPlatformId_zhxy', '100000', { expires: 7, domain: 'jzjyy.cn' });
+	     });
+	     
+		try {
+			var _hmt = _hmt || [];
+			(function() {
+			  var hm = document.createElement("script");
+			  hm.src = "//hm.baidu.com/hm.js?d1f7361f7b89aa9f5259f81c9ef71bbd";
+			  var s = document.getElementsByTagName("script")[0]; 
+			  s.parentNode.insertBefore(hm, s);
+			})();
+		} catch (e) {
+		}
+		
+		function getLoginCookie()
+		{
+			var userName_cookie = getCookie("userName_zhxy");
+			if(WisEmpty(userName_cookie)){
+				document.forms[0].j_username.value = "";
+			} else {
+				document.forms[0].j_username.value = userName_cookie;
+			}
+			
+			var autoFlag_cookie = getCookie("autoFlag_zhxy");
+			//如果没有勾选自动登录，密码清空
+			if(WisEmpty(autoFlag_cookie))
+			{
+				document.forms[0].pwd_input.value = "";
+			    document.forms[0].j_password.value = "";
+			    return;
+			}else {
+				//如果勾选自动登录，判断cookie里密码是否为空
+				var passWord_cookie = getCookie("passWord_zhxy");
+				//如果密码为空，则不提交表单
+				if(WisEmpty(passWord_cookie)){
+				    document.forms[0].pwd_input.value = "";
+				    document.forms[0].j_password.value = "";
+				    if (document.forms[0].remType.value != getCookie("autoFlag_zhxy"))
+				    {
+				    	$("#remType").prop("checked",false);
+				    }
+				    return;
+				} else {
+					document.forms[0].pwd_input.value = passWord_cookie;
+				    document.forms[0].j_password.value = passWord_cookie;
+				    var errorNum_session="null";
+				    
+				    if(errorNum_session =="null" || errorNum_session == "0")
+				    {
+				    	if(document.forms[0].remType.value == getCookie("autoFlag_zhxy")) {
+			    			document.forms[0].submit();
+				    	}else{
+				    		$("#remType").prop("checked",false);
+				    	}
+				    }
+				}
+			}
+		
+		    if ($.browser.msie && ($.browser.version == "6.0") && !$.support.style) { 
+				//warning if ie6 
+				$('#downLoadDiv').animate({
+				   height: 'show', opacity: 'show'
+				}, 400 );
+			}
+		}
+	</script>
+</body>
 </html>
